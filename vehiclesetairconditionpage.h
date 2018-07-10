@@ -19,7 +19,7 @@ public:
 
 private:
     Ui::VehicleSetAirConditionPage *ui;
-    void paintEvent(QPaintEvent *event);
+        void paintEvent(QPaintEvent *event);
 
 private slots:
     void on_BTNHome_pressed();

@@ -78,23 +78,23 @@ void VehicleMaintainPage::NBpressEvent()
     }
     else if(BTNName=="BTN_DataManage")
     {
-
+        changePage(uVehicleMaintainceDataManagePage);
     }
     else if(BTNName=="BTN_ResetCut")
     {
-
+        changePage(uVehicleMaintainceResetExcisionPage);
     }
     else if(BTNName=="BTN_CommunicationStatus")
     {
-
+        changePage(uVehicleMaintainceCommunicationStatePage);
     }
     else if(BTNName=="BTN_SoftwareVersion")
     {
-
+        changePage(uVehicleMaintainceSoftwareVersionPage);
     }
     else if(BTNName=="BTN_MetroSet")
     {
-
+        changePage(uVehicleMaintainceWheelDiameterSetPage);
     }
     else if(BTNName=="BTN_RIOMTest")
     {

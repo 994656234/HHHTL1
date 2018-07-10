@@ -44,6 +44,11 @@ class VehicleMTTimeSetPage;
 class MaintainceAllPortsPage;
 class MaintainceInitSetPage;
 class MaintainceRIOMPage;
+class MaintainceWheelDiameterSetPage;
+class MaintainceSoftwareVersionPage;
+class MaintainceDataManagePage;
+class MaintainceResetExcisionPage;
+class MaintainceCommunicationStatePage;
 
 class Widget : public QWidget
 {
@@ -97,6 +102,11 @@ private:
     MaintainceAllPortsPage* vehicleMaintainceAllPortsPage;
     MaintainceInitSetPage* vehicleMaintainceInitSetPage;
     MaintainceRIOMPage* vehicleMaintainceRIOMPage;
+    MaintainceWheelDiameterSetPage* vehicleMaintainceWheelDiameterSetPage;
+    MaintainceSoftwareVersionPage* vehicleMaintainceSoftwareVersionPage;
+    MaintainceDataManagePage* vehicleMaintainceDataManagePage;
+    MaintainceResetExcisionPage* vehicleMaintainceResetExcisionPage;
+    MaintainceCommunicationStatePage* vehicleMaintainceCommunicationStatePage;
 };
 
 #endif // WIDGET_H

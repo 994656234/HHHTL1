@@ -64,6 +64,11 @@ enum pageIndex
     uVehicleMaintainceAllPortsPage,
     uVehicleMaintainceInitSetPage,
     uVehicleMaintainceRIOMPage,
+    uVehicleMaintainceWheelDiameterSetPage,
+    uVehicleMaintainceSoftwareVersionPage,
+    uVehicleMaintainceDataManagePage,
+    uVehicleMaintainceResetExcisionPage,
+    uVehicleMaintainceCommunicationStatePage,
 };
 
 #define _LOG qDebug() << QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss") << __FILE__ << __LINE__

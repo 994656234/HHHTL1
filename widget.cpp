@@ -34,6 +34,11 @@
 #include "maintainceallportspage.h"
 #include "maintainceinitsetpage.h"
 #include "maintainceriompage.h"
+#include "maintaincewheeldiametersetpage.h"
+#include "maintaincesoftwareversionpage.h"
+#include "maintaincedatamanagepage.h"
+#include "maintainceresetexcisionpage.h"
+#include "maintaincecommunicationstatepage.h"
 
 Widget::Widget(QWidget *parent) :
     QWidget(parent),
@@ -181,6 +186,26 @@ Widget::Widget(QWidget *parent) :
     this->vehicleMaintainceRIOMPage->setMyBase(uMiddle,QString("RIOM界面"));
     this->vehicleMaintainceRIOMPage->hide();
 
+    this->vehicleMaintainceWheelDiameterSetPage=new MaintainceWheelDiameterSetPage(this);
+    this->vehicleMaintainceWheelDiameterSetPage->setMyBase(uMiddle,QString("轮径设置界面"));
+    this->vehicleMaintainceWheelDiameterSetPage->hide();
+
+    this->vehicleMaintainceSoftwareVersionPage=new MaintainceSoftwareVersionPage(this);
+    this->vehicleMaintainceSoftwareVersionPage->setMyBase(uMiddle,QString("版本信息界面"));
+    this->vehicleMaintainceSoftwareVersionPage->hide();
+
+    this->vehicleMaintainceDataManagePage=new MaintainceDataManagePage(this);
+    this->vehicleMaintainceDataManagePage->setMyBase(uMiddle,QString("数据管理界面"));
+    this->vehicleMaintainceDataManagePage->hide();
+
+    this->vehicleMaintainceResetExcisionPage=new MaintainceResetExcisionPage(this);
+    this->vehicleMaintainceResetExcisionPage->setMyBase(uMiddle,QString("复位切除"));
+    this->vehicleMaintainceResetExcisionPage->hide();
+
+    this->vehicleMaintainceCommunicationStatePage=new MaintainceCommunicationStatePage(this);
+    this->vehicleMaintainceCommunicationStatePage->setMyBase(uMiddle,QString("通信状态界面"));
+    this->vehicleMaintainceCommunicationStatePage->hide();
+
     this->widgets.insert(uVehicleRunStatePage,this->vehicleRunStatePage);
     this->widgets.insert(uVehicleStationBar,this->vehicleStationBar);
     this->widgets.insert(uVehicleTrainArea,this->vehicleTrainArea);
@@ -207,7 +232,11 @@ Widget::Widget(QWidget *parent) :
     this->widgets.insert(uVehicleMaintainceAllPortsPage,this->vehicleMaintainceAllPortsPage);
     this->widgets.insert(uVehicleMaintainceInitSetPage,this->vehicleMaintainceInitSetPage);
     this->widgets.insert(uVehicleMaintainceRIOMPage,this->vehicleMaintainceRIOMPage);
-
+    this->widgets.insert(uVehicleMaintainceWheelDiameterSetPage,this->vehicleMaintainceWheelDiameterSetPage);
+    this->widgets.insert(uVehicleMaintainceSoftwareVersionPage,this->vehicleMaintainceSoftwareVersionPage);
+    this->widgets.insert(uVehicleMaintainceDataManagePage,this->vehicleMaintainceDataManagePage);
+    this->widgets.insert(uVehicleMaintainceResetExcisionPage,this->vehicleMaintainceResetExcisionPage);
+    this->widgets.insert(uVehicleMaintainceCommunicationStatePage,this->vehicleMaintainceCommunicationStatePage);
 }
 
 Widget::~Widget()

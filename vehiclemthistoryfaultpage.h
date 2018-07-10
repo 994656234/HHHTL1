@@ -1,6 +1,7 @@
 #ifndef VEHICLEMTHISTORYFAULTPAGE_H
 #define VEHICLEMTHISTORYFAULTPAGE_H
 #include "mybase.h"
+#include "qpushbutton.h"
 
 #include <QWidget>
 
@@ -18,6 +19,8 @@ public:
 
 private:
     Ui::VehicleMTHistoryFaultPage *ui;
+private slots:
+    void pushButtonPressedEvent();
 };
 
 #endif // VEHICLEMTHISTORYFAULTPAGE_H
