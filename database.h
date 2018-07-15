@@ -364,6 +364,10 @@ public:
     bool TR1CT_ChargingRTempValid_B1,TR1CT_DCUInvAirTempValid_B1,TR1CT_Motor4TempValid_B1,TR1CT_Motor3TempValid_B1,//充电电阻温度有效 牵引变流器空气温度有效 电机4温度有效 电机3温度有效
             TR1CT_Motor2TempValid_B1,TR1CT_Motor1TempValid_B1,TR1CT_DCUInvRadiatorTempValid_B1;//电机2温度有效 电机1温度有效 牵引变流器散热器温度有效
 
+    short TR1CT_TractionEnergy_I16,TR1CT_RebornEnergy_I16,TR1CT_MCMWorkingTime_I16,TR1CT_MotorWorkingDistance_I16;//牵引能耗 再生能耗 MCM工作时间  电机运行距离
+
+
+
     //DDU2-CCU
     //0x4C0
     short TR2CT_DCUMLifeSignal_I16,TR2CT_DCUMBrkForce_I16,TR2CT_Axis1Speed_I16,TR2CT_Axis2Speed_I16,//DCUM生命信号, 牵引制动力实际值,1轴速度,2轴速度
@@ -408,6 +412,8 @@ public:
 
     bool TR2CT_ChargingRTempValid_B1,TR2CT_DCUInvAirTempValid_B1,TR2CT_Motor4TempValid_B1,TR2CT_Motor3TempValid_B1,//充电电阻温度有效 牵引变流器空气温度有效 电机4温度有效 电机3温度有效
             TR2CT_Motor2TempValid_B1,TR2CT_Motor1TempValid_B1,TR2CT_DCUInvRadiatorTempValid_B1;//电机2温度有效 电机1温度有效 牵引变流器散热器温度有效
+
+    short TR2CT_TractionEnergy_I16,TR2CT_RebornEnergy_I16,TR2CT_MCMWorkingTime_I16,TR2CT_MotorWorkingDistance_I16;//牵引能耗 再生能耗 MCM工作时间  电机运行距离
 
     //DDU3-CCU
     //0x4D0
@@ -454,6 +460,7 @@ public:
     bool TR3CT_ChargingRTempValid_B1,TR3CT_DCUInvAirTempValid_B1,TR3CT_Motor4TempValid_B1,TR3CT_Motor3TempValid_B1,//充电电阻温度有效 牵引变流器空气温度有效 电机4温度有效 电机3温度有效
             TR3CT_Motor2TempValid_B1,TR3CT_Motor1TempValid_B1,TR3CT_DCUInvRadiatorTempValid_B1;//电机2温度有效 电机1温度有效 牵引变流器散热器温度有效
 
+    short TR3CT_TractionEnergy_I16,TR3CT_RebornEnergy_I16,TR3CT_MCMWorkingTime_I16,TR3CT_MotorWorkingDistance_I16;//牵引能耗 再生能耗 MCM工作时间  电机运行距离
 
 
     //DDU4-CCU
@@ -501,6 +508,7 @@ public:
     bool TR4CT_ChargingRTempValid_B1,TR4CT_DCUInvAirTempValid_B1,TR4CT_Motor4TempValid_B1,TR4CT_Motor3TempValid_B1,//充电电阻温度有效 牵引变流器空气温度有效 电机4温度有效 电机3温度有效
             TR4CT_Motor2TempValid_B1,TR4CT_Motor1TempValid_B1,TR4CT_DCUInvRadiatorTempValid_B1;//电机2温度有效 电机1温度有效 牵引变流器散热器温度有效
 
+    short TR4CT_TractionEnergy_I16,TR4CT_RebornEnergy_I16,TR4CT_MCMWorkingTime_I16,TR4CT_MotorWorkingDistance_I16;//牵引能耗 再生能耗 MCM工作时间  电机运行距离
 
 
     //CCU-DCU
