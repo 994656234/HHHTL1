@@ -66,6 +66,7 @@ public:
     bool addPort(unsigned short int port, enum crrc_port_size size, enum crrc_port_type type, unsigned short int cycle);
     bool getBool(unsigned short int port, unsigned short int byteOffset, unsigned short int bitOffset);
     unsigned char getUnsignedChar(unsigned short int port, unsigned short int byteOffset);
+    char getsignedChar(unsigned short int port, unsigned short int byteOffset);
     unsigned short int getUnsignedInt(unsigned short int port, unsigned short int byteOffset);
     signed short int getSignedInt(unsigned short int port, unsigned short int byteOffset);
     qint32 getSignedInt32(unsigned short int port, unsigned short int byteOffset);

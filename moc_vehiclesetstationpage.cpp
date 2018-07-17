@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'vehiclesetstationpage.h'
 **
-** Created: Thu Jul 12 02:56:10 2018
+** Created: Tue Jul 17 01:44:42 2018
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!

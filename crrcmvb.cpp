@@ -267,6 +267,41 @@ unsigned char CrrcMvb::getUnsignedChar(unsigned short int port, unsigned short i
     }
 }
 
+
+// paramerters
+// unsigned short int port: the port in data stream
+// unsigned short int byteOffset: the byte offset in data stream
+ char CrrcMvb::getsignedChar(unsigned short int port, unsigned short int byteOffset)
+{
+    unsigned char *pointer = NULL;
+          signed char value = 0;
+
+    if (this->portData.contains(port) && byteOffset < 32)
+    {
+        // pixy is a little endian device
+        if (byteOffset % 2 == 1)
+        {
+            pointer = (unsigned char *)(this->portData[port]->data);
+            value = *(pointer + byteOffset - 1);
+        }
+        else
+        {
+            pointer = (unsigned char *)(this->portData[port]->data);
+            value = *(pointer + byteOffset + 1);
+        }
+
+        return value;
+    }
+    else
+    {
+        qDebug() << "there no port in the databse or byte offset is too long" << port;
+
+        return 0;
+    }
+}
+
+
+
 // paramerters
 // unsigned short int port: the port in data stream
 // unsigned short int byteOffset: the byte offset in data stream
