@@ -40,6 +40,9 @@
 #include "maintaincedatamanagepage.h"
 #include "maintainceresetexcisionpage.h"
 #include "maintaincecommunicationstatepage.h"
+#include "vehiclesetbrakeparampage.h"
+#include "vehiclesetintensitycontrolpage.h"
+#include "vehiclesetbraketestpage.h"
 
 Widget::Widget(QWidget *parent) :
     QWidget(parent),
@@ -160,8 +163,17 @@ Widget::Widget(QWidget *parent) :
     this->vehicleSetAirConditionPage->setMyBase(uMiddle,QString("空调设置界面"));
     this->vehicleSetAirConditionPage->hide();
 
+    this->vehicleSetBrakeParamPage=new VehicleSetBrakeParamPage(this);
+    this->vehicleSetBrakeParamPage->setMyBase(uMiddle,QString("制动参数界面"));
+    this->vehicleSetBrakeParamPage->hide();
 
+    this->vehicleSetIntensityControlPage=new VehicleSetIntensityControlPage(this);
+    this->vehicleSetIntensityControlPage->setMyBase(uMiddle,QString("亮度调节"));
+    this->vehicleSetIntensityControlPage->hide();
 
+    this->vehicleSetBrakeTestPage=new VehicleSetBrakeTestPage(this);
+    this->vehicleSetBrakeTestPage->setMyBase(uMiddle,"制动自检");
+    this->vehicleSetBrakeTestPage->hide();
 
 
     this->vehicleMaintainPage=new VehicleMaintainPage(this);
@@ -240,6 +252,9 @@ Widget::Widget(QWidget *parent) :
     this->widgets.insert(uVehicleMaintainceDataManagePage,this->vehicleMaintainceDataManagePage);
     this->widgets.insert(uVehicleMaintainceResetExcisionPage,this->vehicleMaintainceResetExcisionPage);
     this->widgets.insert(uVehicleMaintainceCommunicationStatePage,this->vehicleMaintainceCommunicationStatePage);
+    this->widgets.insert(uVehicleSetBrakeParamPage,this->vehicleSetBrakeParamPage);
+    this->widgets.insert(uVehicleSetIntensityControlPage,this->vehicleSetIntensityControlPage);
+    this->widgets.insert(uVehicleSetBrakeTestPage,this->vehicleSetBrakeTestPage);
 }
 
 Widget::~Widget()

@@ -50,6 +50,10 @@ class MaintainceDataManagePage;
 class MaintainceResetExcisionPage;
 class MaintainceCommunicationStatePage;
 class Simulation;
+class VehicleSetBrakeParamPage;
+class VehicleSetIntensityControlPage;
+class VehicleSetBrakeTestPage;
+class VehicleMaintainceTractSubsystemPage;
 
 class Widget : public QWidget
 {
@@ -109,6 +113,10 @@ private:
     MaintainceResetExcisionPage* vehicleMaintainceResetExcisionPage;
     MaintainceCommunicationStatePage* vehicleMaintainceCommunicationStatePage;
     Simulation* simulation;
+    VehicleSetBrakeParamPage* vehicleSetBrakeParamPage;
+    VehicleSetIntensityControlPage* vehicleSetIntensityControlPage;
+    VehicleSetBrakeTestPage* vehicleSetBrakeTestPage;
+    VehicleMaintainceTractSubsystemPage* vehicleMaintainceTractSubsystemPage;
 };
 
 #endif // WIDGET_H

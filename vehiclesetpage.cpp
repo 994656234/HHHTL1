@@ -60,17 +60,17 @@ void VehicleSetPage::on_BTN_setAirCondition_pressed()
 
 void VehicleSetPage::on_BTN_setBrakeParam_pressed()
 {
-
+    changePage(uVehicleSetBrakeParamPage);
 }
 
 void VehicleSetPage::on_BTN_setLight_pressed()
 {
-
+    changePage(uVehicleSetIntensityControlPage);
 }
 
 void VehicleSetPage::on_BTN_setBrakeTest_pressed()
 {
-
+    changePage(uVehicleSetBrakeTestPage);
 }
 
 void VehicleSetPage::on_BTNHome_pressed()

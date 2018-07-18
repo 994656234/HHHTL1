@@ -353,6 +353,399 @@ font:20px &quot;微软雅黑&quot;;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <widget class="QLabel" name="lbl_mode">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>140</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font:24px &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>空调模式</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BTN_mode_auto">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>130</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-top:3px solid rgb(19,20,87);
+color: rgb(255, 255, 255);
+border-bottom:3px solid rgb(187,188,247);
+border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+font:22px &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>自动</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BTN_mode_Ventilate">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>130</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-top:3px solid rgb(19,20,87);
+color: rgb(255, 255, 255);
+border-bottom:3px solid rgb(187,188,247);
+border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+font:22px &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>通风</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BTN_mode_stop">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>130</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-top:3px solid rgb(19,20,87);
+color: rgb(255, 255, 255);
+border-bottom:3px solid rgb(187,188,247);
+border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+font:22px &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>停机</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_temperature">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>230</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font:24px &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>温度偏移</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BTN_tem_sub">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>220</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-top:3px solid rgb(19,20,87);
+color: rgb(255, 255, 255);
+border-bottom:3px solid rgb(187,188,247);
+border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+font:22px &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>－</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BTN_tem_add">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>220</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-top:3px solid rgb(19,20,87);
+color: rgb(255, 255, 255);
+border-bottom:3px solid rgb(187,188,247);
+border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+font:22px &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>＋</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_tem_value">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>220</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:22px &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>1.5</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_preinstall">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>320</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font:24px &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>空调预冷/暖</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BTN_preinstall_begin">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>310</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-top:3px solid rgb(19,20,87);
+color: rgb(255, 255, 255);
+border-bottom:3px solid rgb(187,188,247);
+border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+font:22px &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>启动</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BTN_preinstall_stop">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>310</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-top:3px solid rgb(19,20,87);
+color: rgb(255, 255, 255);
+border-bottom:3px solid rgb(187,188,247);
+border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+font:22px &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>停机</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_newwind1">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>410</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font:24px &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>新风门</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BTN_newwind1_begin">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>400</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-top:3px solid rgb(19,20,87);
+color: rgb(255, 255, 255);
+border-bottom:3px solid rgb(187,188,247);
+border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+font:22px &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BTN_newwind1_stop">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>400</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-top:3px solid rgb(19,20,87);
+color: rgb(255, 255, 255);
+border-bottom:3px solid rgb(187,188,247);
+border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+font:22px &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_newwind2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>500</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font:24px &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>新风门</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BTN_newwind2_begin1_3">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>490</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-top:3px solid rgb(19,20,87);
+color: rgb(255, 255, 255);
+border-bottom:3px solid rgb(187,188,247);
+border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+font:22px &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>打开1/3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BTN_newwind2_begin2_3">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>490</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-top:3px solid rgb(19,20,87);
+color: rgb(255, 255, 255);
+border-bottom:3px solid rgb(187,188,247);
+border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+font:22px &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>打开2/3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BTN_newwind2_begin">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>490</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-top:3px solid rgb(19,20,87);
+color: rgb(255, 255, 255);
+border-bottom:3px solid rgb(187,188,247);
+border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+font:22px &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BTN_newwind2_reset">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>490</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-top:3px solid rgb(19,20,87);
+color: rgb(255, 255, 255);
+border-bottom:3px solid rgb(187,188,247);
+border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));
+font:22px &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>复位</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

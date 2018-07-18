@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclemaintainpage.ui'
 **
-** Created: Tue Jul 17 22:05:23 2018
+** Created: Wed Jul 18 21:32:28 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -249,7 +249,7 @@ public:
         lbl1_2 = new QLabel(VehicleMaintainPage);
         lbl1_2->setObjectName(QString::fromUtf8("lbl1_2"));
         lbl1_2->setGeometry(QRect(240, 410, 561, 101));
-        lbl1_2->setStyleSheet(QString::fromUtf8("background: qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247))"));
+        lbl1_2->setStyleSheet(QString::fromUtf8("background: qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));"));
         BTN_BrakeSubsystem = new QPushButton(VehicleMaintainPage);
         BTN_BrakeSubsystem->setObjectName(QString::fromUtf8("BTN_BrakeSubsystem"));
         BTN_BrakeSubsystem->setGeometry(QRect(250, 420, 100, 80));
@@ -334,7 +334,7 @@ public:
         lbl1->setText(QString());
         BTN_ResetCut->setText(QApplication::translate("VehicleMaintainPage", "\345\210\207\351\231\244\n"
 "\345\244\215\344\275\215", 0, QApplication::UnicodeUTF8));
-        BTN1->setText(QString());
+        BTN1->setText(QApplication::translate("VehicleMaintainPage", "\350\277\224\345\233\236", 0, QApplication::UnicodeUTF8));
         BTN_MetroSet->setText(QApplication::translate("VehicleMaintainPage", "\350\275\246\350\276\206\n"
 "\350\256\276\347\275\256", 0, QApplication::UnicodeUTF8));
         BTN3->setText(QString());

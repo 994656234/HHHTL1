@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclesetairconditionpage.ui'
 **
-** Created: Tue Jul 17 22:05:23 2018
+** Created: Thu Jul 19 02:32:19 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -40,6 +40,25 @@ public:
     QLabel *LBLTC2;
     QLabel *LBLM1;
     QLabel *LBLTC1;
+    QLabel *lbl_mode;
+    QPushButton *BTN_mode_auto;
+    QPushButton *BTN_mode_Ventilate;
+    QPushButton *BTN_mode_stop;
+    QLabel *lbl_temperature;
+    QPushButton *BTN_tem_sub;
+    QPushButton *BTN_tem_add;
+    QLabel *lbl_tem_value;
+    QLabel *lbl_preinstall;
+    QPushButton *BTN_preinstall_begin;
+    QPushButton *BTN_preinstall_stop;
+    QLabel *lbl_newwind1;
+    QPushButton *BTN_newwind1_begin;
+    QPushButton *BTN_newwind1_stop;
+    QLabel *lbl_newwind2;
+    QPushButton *BTN_newwind2_begin1_3;
+    QPushButton *BTN_newwind2_begin2_3;
+    QPushButton *BTN_newwind2_begin;
+    QPushButton *BTN_newwind2_reset;
 
     void setupUi(QWidget *VehicleSetAirConditionPage)
     {
@@ -160,6 +179,159 @@ public:
 "border:1px solid black;\n"
 "font:20px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
         LBLTC1->setAlignment(Qt::AlignCenter);
+        lbl_mode = new QLabel(VehicleSetAirConditionPage);
+        lbl_mode->setObjectName(QString::fromUtf8("lbl_mode"));
+        lbl_mode->setGeometry(QRect(60, 140, 121, 41));
+        lbl_mode->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font:24px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        lbl_mode->setAlignment(Qt::AlignCenter);
+        BTN_mode_auto = new QPushButton(VehicleSetAirConditionPage);
+        BTN_mode_auto->setObjectName(QString::fromUtf8("BTN_mode_auto"));
+        BTN_mode_auto->setGeometry(QRect(230, 130, 161, 61));
+        BTN_mode_auto->setStyleSheet(QString::fromUtf8("border-top:3px solid rgb(19,20,87);\n"
+"color: rgb(255, 255, 255);\n"
+"border-bottom:3px solid rgb(187,188,247);\n"
+"border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"font:22px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        BTN_mode_Ventilate = new QPushButton(VehicleSetAirConditionPage);
+        BTN_mode_Ventilate->setObjectName(QString::fromUtf8("BTN_mode_Ventilate"));
+        BTN_mode_Ventilate->setGeometry(QRect(420, 130, 161, 61));
+        BTN_mode_Ventilate->setStyleSheet(QString::fromUtf8("border-top:3px solid rgb(19,20,87);\n"
+"color: rgb(255, 255, 255);\n"
+"border-bottom:3px solid rgb(187,188,247);\n"
+"border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"font:22px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        BTN_mode_stop = new QPushButton(VehicleSetAirConditionPage);
+        BTN_mode_stop->setObjectName(QString::fromUtf8("BTN_mode_stop"));
+        BTN_mode_stop->setGeometry(QRect(610, 130, 161, 61));
+        BTN_mode_stop->setStyleSheet(QString::fromUtf8("border-top:3px solid rgb(19,20,87);\n"
+"color: rgb(255, 255, 255);\n"
+"border-bottom:3px solid rgb(187,188,247);\n"
+"border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"font:22px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        lbl_temperature = new QLabel(VehicleSetAirConditionPage);
+        lbl_temperature->setObjectName(QString::fromUtf8("lbl_temperature"));
+        lbl_temperature->setGeometry(QRect(60, 230, 121, 41));
+        lbl_temperature->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font:24px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        lbl_temperature->setAlignment(Qt::AlignCenter);
+        BTN_tem_sub = new QPushButton(VehicleSetAirConditionPage);
+        BTN_tem_sub->setObjectName(QString::fromUtf8("BTN_tem_sub"));
+        BTN_tem_sub->setGeometry(QRect(230, 220, 161, 61));
+        BTN_tem_sub->setStyleSheet(QString::fromUtf8("border-top:3px solid rgb(19,20,87);\n"
+"color: rgb(255, 255, 255);\n"
+"border-bottom:3px solid rgb(187,188,247);\n"
+"border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"font:22px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        BTN_tem_add = new QPushButton(VehicleSetAirConditionPage);
+        BTN_tem_add->setObjectName(QString::fromUtf8("BTN_tem_add"));
+        BTN_tem_add->setGeometry(QRect(610, 220, 161, 61));
+        BTN_tem_add->setStyleSheet(QString::fromUtf8("border-top:3px solid rgb(19,20,87);\n"
+"color: rgb(255, 255, 255);\n"
+"border-bottom:3px solid rgb(187,188,247);\n"
+"border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"font:22px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        lbl_tem_value = new QLabel(VehicleSetAirConditionPage);
+        lbl_tem_value->setObjectName(QString::fromUtf8("lbl_tem_value"));
+        lbl_tem_value->setGeometry(QRect(420, 220, 161, 61));
+        lbl_tem_value->setStyleSheet(QString::fromUtf8("font:22px \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"color: rgb(255, 255, 255);"));
+        lbl_tem_value->setAlignment(Qt::AlignCenter);
+        lbl_preinstall = new QLabel(VehicleSetAirConditionPage);
+        lbl_preinstall->setObjectName(QString::fromUtf8("lbl_preinstall"));
+        lbl_preinstall->setGeometry(QRect(50, 320, 141, 41));
+        lbl_preinstall->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font:24px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        lbl_preinstall->setAlignment(Qt::AlignCenter);
+        BTN_preinstall_begin = new QPushButton(VehicleSetAirConditionPage);
+        BTN_preinstall_begin->setObjectName(QString::fromUtf8("BTN_preinstall_begin"));
+        BTN_preinstall_begin->setGeometry(QRect(230, 310, 161, 61));
+        BTN_preinstall_begin->setStyleSheet(QString::fromUtf8("border-top:3px solid rgb(19,20,87);\n"
+"color: rgb(255, 255, 255);\n"
+"border-bottom:3px solid rgb(187,188,247);\n"
+"border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"font:22px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        BTN_preinstall_stop = new QPushButton(VehicleSetAirConditionPage);
+        BTN_preinstall_stop->setObjectName(QString::fromUtf8("BTN_preinstall_stop"));
+        BTN_preinstall_stop->setGeometry(QRect(420, 310, 161, 61));
+        BTN_preinstall_stop->setStyleSheet(QString::fromUtf8("border-top:3px solid rgb(19,20,87);\n"
+"color: rgb(255, 255, 255);\n"
+"border-bottom:3px solid rgb(187,188,247);\n"
+"border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"font:22px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        lbl_newwind1 = new QLabel(VehicleSetAirConditionPage);
+        lbl_newwind1->setObjectName(QString::fromUtf8("lbl_newwind1"));
+        lbl_newwind1->setGeometry(QRect(60, 410, 121, 41));
+        lbl_newwind1->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font:24px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        lbl_newwind1->setAlignment(Qt::AlignCenter);
+        BTN_newwind1_begin = new QPushButton(VehicleSetAirConditionPage);
+        BTN_newwind1_begin->setObjectName(QString::fromUtf8("BTN_newwind1_begin"));
+        BTN_newwind1_begin->setGeometry(QRect(230, 400, 161, 61));
+        BTN_newwind1_begin->setStyleSheet(QString::fromUtf8("border-top:3px solid rgb(19,20,87);\n"
+"color: rgb(255, 255, 255);\n"
+"border-bottom:3px solid rgb(187,188,247);\n"
+"border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"font:22px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        BTN_newwind1_stop = new QPushButton(VehicleSetAirConditionPage);
+        BTN_newwind1_stop->setObjectName(QString::fromUtf8("BTN_newwind1_stop"));
+        BTN_newwind1_stop->setGeometry(QRect(420, 400, 161, 61));
+        BTN_newwind1_stop->setStyleSheet(QString::fromUtf8("border-top:3px solid rgb(19,20,87);\n"
+"color: rgb(255, 255, 255);\n"
+"border-bottom:3px solid rgb(187,188,247);\n"
+"border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"font:22px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        lbl_newwind2 = new QLabel(VehicleSetAirConditionPage);
+        lbl_newwind2->setObjectName(QString::fromUtf8("lbl_newwind2"));
+        lbl_newwind2->setGeometry(QRect(60, 500, 121, 41));
+        lbl_newwind2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font:24px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        lbl_newwind2->setAlignment(Qt::AlignCenter);
+        BTN_newwind2_begin1_3 = new QPushButton(VehicleSetAirConditionPage);
+        BTN_newwind2_begin1_3->setObjectName(QString::fromUtf8("BTN_newwind2_begin1_3"));
+        BTN_newwind2_begin1_3->setGeometry(QRect(230, 490, 161, 61));
+        BTN_newwind2_begin1_3->setStyleSheet(QString::fromUtf8("border-top:3px solid rgb(19,20,87);\n"
+"color: rgb(255, 255, 255);\n"
+"border-bottom:3px solid rgb(187,188,247);\n"
+"border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"font:22px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        BTN_newwind2_begin2_3 = new QPushButton(VehicleSetAirConditionPage);
+        BTN_newwind2_begin2_3->setObjectName(QString::fromUtf8("BTN_newwind2_begin2_3"));
+        BTN_newwind2_begin2_3->setGeometry(QRect(420, 490, 161, 61));
+        BTN_newwind2_begin2_3->setStyleSheet(QString::fromUtf8("border-top:3px solid rgb(19,20,87);\n"
+"color: rgb(255, 255, 255);\n"
+"border-bottom:3px solid rgb(187,188,247);\n"
+"border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"font:22px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        BTN_newwind2_begin = new QPushButton(VehicleSetAirConditionPage);
+        BTN_newwind2_begin->setObjectName(QString::fromUtf8("BTN_newwind2_begin"));
+        BTN_newwind2_begin->setGeometry(QRect(610, 490, 161, 61));
+        BTN_newwind2_begin->setStyleSheet(QString::fromUtf8("border-top:3px solid rgb(19,20,87);\n"
+"color: rgb(255, 255, 255);\n"
+"border-bottom:3px solid rgb(187,188,247);\n"
+"border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"font:22px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        BTN_newwind2_reset = new QPushButton(VehicleSetAirConditionPage);
+        BTN_newwind2_reset->setObjectName(QString::fromUtf8("BTN_newwind2_reset"));
+        BTN_newwind2_reset->setGeometry(QRect(800, 490, 161, 61));
+        BTN_newwind2_reset->setStyleSheet(QString::fromUtf8("border-top:3px solid rgb(19,20,87);\n"
+"color: rgb(255, 255, 255);\n"
+"border-bottom:3px solid rgb(187,188,247);\n"
+"border-left:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"border-right:3px solid qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));\n"
+"font:22px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
 
         retranslateUi(VehicleSetAirConditionPage);
 
@@ -185,6 +357,25 @@ public:
         LBLTC2->setText(QApplication::translate("VehicleSetAirConditionPage", "H06", 0, QApplication::UnicodeUTF8));
         LBLM1->setText(QApplication::translate("VehicleSetAirConditionPage", "H03", 0, QApplication::UnicodeUTF8));
         LBLTC1->setText(QApplication::translate("VehicleSetAirConditionPage", "H01", 0, QApplication::UnicodeUTF8));
+        lbl_mode->setText(QApplication::translate("VehicleSetAirConditionPage", "\347\251\272\350\260\203\346\250\241\345\274\217", 0, QApplication::UnicodeUTF8));
+        BTN_mode_auto->setText(QApplication::translate("VehicleSetAirConditionPage", "\350\207\252\345\212\250", 0, QApplication::UnicodeUTF8));
+        BTN_mode_Ventilate->setText(QApplication::translate("VehicleSetAirConditionPage", "\351\200\232\351\243\216", 0, QApplication::UnicodeUTF8));
+        BTN_mode_stop->setText(QApplication::translate("VehicleSetAirConditionPage", "\345\201\234\346\234\272", 0, QApplication::UnicodeUTF8));
+        lbl_temperature->setText(QApplication::translate("VehicleSetAirConditionPage", "\346\270\251\345\272\246\345\201\217\347\247\273", 0, QApplication::UnicodeUTF8));
+        BTN_tem_sub->setText(QApplication::translate("VehicleSetAirConditionPage", "\357\274\215", 0, QApplication::UnicodeUTF8));
+        BTN_tem_add->setText(QApplication::translate("VehicleSetAirConditionPage", "\357\274\213", 0, QApplication::UnicodeUTF8));
+        lbl_tem_value->setText(QApplication::translate("VehicleSetAirConditionPage", "1.5", 0, QApplication::UnicodeUTF8));
+        lbl_preinstall->setText(QApplication::translate("VehicleSetAirConditionPage", "\347\251\272\350\260\203\351\242\204\345\206\267/\346\232\226", 0, QApplication::UnicodeUTF8));
+        BTN_preinstall_begin->setText(QApplication::translate("VehicleSetAirConditionPage", "\345\220\257\345\212\250", 0, QApplication::UnicodeUTF8));
+        BTN_preinstall_stop->setText(QApplication::translate("VehicleSetAirConditionPage", "\345\201\234\346\234\272", 0, QApplication::UnicodeUTF8));
+        lbl_newwind1->setText(QApplication::translate("VehicleSetAirConditionPage", "\346\226\260\351\243\216\351\227\250", 0, QApplication::UnicodeUTF8));
+        BTN_newwind1_begin->setText(QApplication::translate("VehicleSetAirConditionPage", "\346\211\223\345\274\200", 0, QApplication::UnicodeUTF8));
+        BTN_newwind1_stop->setText(QApplication::translate("VehicleSetAirConditionPage", "\345\205\263\351\227\255", 0, QApplication::UnicodeUTF8));
+        lbl_newwind2->setText(QApplication::translate("VehicleSetAirConditionPage", "\346\226\260\351\243\216\351\227\250", 0, QApplication::UnicodeUTF8));
+        BTN_newwind2_begin1_3->setText(QApplication::translate("VehicleSetAirConditionPage", "\346\211\223\345\274\2001/3", 0, QApplication::UnicodeUTF8));
+        BTN_newwind2_begin2_3->setText(QApplication::translate("VehicleSetAirConditionPage", "\346\211\223\345\274\2002/3", 0, QApplication::UnicodeUTF8));
+        BTN_newwind2_begin->setText(QApplication::translate("VehicleSetAirConditionPage", "\346\211\223\345\274\200", 0, QApplication::UnicodeUTF8));
+        BTN_newwind2_reset->setText(QApplication::translate("VehicleSetAirConditionPage", "\345\244\215\344\275\215", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

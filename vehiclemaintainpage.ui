@@ -212,7 +212,7 @@ font:20px &quot;微软雅黑&quot;;</string>
     <string notr="true">font: 20px, &quot;微软雅黑&quot;;color: black;transparent;background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 rgba(170,170,170,255),stop:1 rgba(150,150,150,255));</string>
    </property>
    <property name="text">
-    <string/>
+    <string>返回</string>
    </property>
   </widget>
   <widget class="QPushButton" name="BTN_MetroSet">
@@ -585,7 +585,7 @@ font:20px &quot;微软雅黑&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background: qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247))</string>
+    <string notr="true">background: qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(19,20,87), stop:1 rgb(187,188,247));</string>
    </property>
    <property name="text">
     <string/>
