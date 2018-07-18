@@ -49,6 +49,7 @@ class MaintainceSoftwareVersionPage;
 class MaintainceDataManagePage;
 class MaintainceResetExcisionPage;
 class MaintainceCommunicationStatePage;
+class Simulation;
 
 class Widget : public QWidget
 {
@@ -107,6 +108,7 @@ private:
     MaintainceDataManagePage* vehicleMaintainceDataManagePage;
     MaintainceResetExcisionPage* vehicleMaintainceResetExcisionPage;
     MaintainceCommunicationStatePage* vehicleMaintainceCommunicationStatePage;
+    Simulation* simulation;
 };
 
 #endif // WIDGET_H

@@ -4516,49 +4516,296 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
 
 
     /****************************************************TDS1→CCU*******************************************************/
-//    TDiCT_TDSlife_U16=crrcMvb->getUnsignedInt(0xCi0,0);
-//    TDiCT_SoftwareVersion_U16=crrcMvb->getUnsignedInt(0xCi0,2);
+    TD1CT_TDSlife_U16=crrcMvb->getUnsignedInt(0xC10,0);
+    TD1CT_SoftwareVersion_U16=crrcMvb->getUnsignedInt(0xC10,2);
 
-//    TDiCT_TDSSlightFault_B1=crrcMvb->getBool(0xCi0,5,7);
-//    TDiCT_TDSMediumFault_B1=crrcMvb->getBool(0xCi0,5,6);
-//    TDiCT_TDSSeriousFault_B1=crrcMvb->getBool(0xCi0,5,5);
-//    TDiCT_TDSMaster_B1=crrcMvb->getBool(0xCi0,5,4);
-//    TDiCT_InternalBusFault_B1=crrcMvb->getBool(0xCi0,5,3);
-//    TDiCT_MVBLAT_B1=crrcMvb->getBool(0xCi0,5,2);
-//    TDiCT_MVBRLD_B1=crrcMvb->getBool(0xCi0,5,1);
+    TD1CT_TDSSlightFault_B1=crrcMvb->getBool(0xC10,5,7);
+    TD1CT_TDSMediumFault_B1=crrcMvb->getBool(0xC10,5,6);
+    TD1CT_TDSSeriousFault_B1=crrcMvb->getBool(0xC10,5,5);
+    TD1CT_TDSMaster_B1=crrcMvb->getBool(0xC10,5,4);
+    TD1CT_InternalBusFault_B1=crrcMvb->getBool(0xC10,5,3);
+    TD1CT_MVBLAT_B1=crrcMvb->getBool(0xC10,5,2);
+    TD1CT_MVBRLD_B1=crrcMvb->getBool(0xC10,5,1);
 
-//    TDiCT_Car1No1Temp_I8
-//    TDiCT_Car1No2Temp_I8
-//    TDiCT_Car1No3Temp_I8
-//    TDiCT_Car1No4Temp_I8
-//    TDiCT_Car1No5Temp_I8
-//    TDiCT_Car1No6Temp_I8
-//    TDiCT_Car1No7Temp_I8
-//    TDiCT_Car1No8Temp_I8
-//    TDiCT_Car2No1Temp_I8
-//    TDiCT_Car2No2Temp_I8
-//    TDiCT_Car2No3Temp_I8
-//    TDiCT_Car2No4Temp_I8
-//    TDiCT_Car2No5Temp_I8
-//    TDiCT_Car2No6Temp_I8
-//    TDiCT_Car2No7Temp_I8
-//    TDiCT_Car2No8Temp_I8
-//    TDiCT_Car3No1Temp_I8
-//    TDiCT_Car3No2Temp_I8
-//    TDiCT_Car3No3Temp_I8
-//    TDiCT_Car3No4Temp_I8
-//    TDiCT_Car3No5Temp_I8
-//    TDiCT_Car3No6Temp_I8
-//    TDiCT_Car3No7Temp_I8
-//    TDiCT_Car3No8Temp_I8
-//    TDiCT_Car4No1Temp_I8
-//    TDiCT_Car4No2Temp_I8
-//    TDiCT_Car4No3Temp_I8
-//    TDiCT_Car4No4Temp_I8
-//    TDiCT_Car4No5Temp_I8
-//    TDiCT_Car4No6Temp_I8
-//    TDiCT_Car4No7Temp_I8
-//    TDiCT_Car4No8Temp_I8
+    TD1CT_Car1No1Temp_I8=crrcMvb->getsignedChar(0xC12,1);
+    TD1CT_Car1No2Temp_I8=crrcMvb->getsignedChar(0xC12,0);
+    TD1CT_Car1No3Temp_I8=crrcMvb->getsignedChar(0xC12,3);
+    TD1CT_Car1No4Temp_I8=crrcMvb->getsignedChar(0xC12,2);
+    TD1CT_Car1No5Temp_I8=crrcMvb->getsignedChar(0xC12,5);
+    TD1CT_Car1No6Temp_I8=crrcMvb->getsignedChar(0xC12,4);
+    TD1CT_Car1No7Temp_I8=crrcMvb->getsignedChar(0xC12,7);
+    TD1CT_Car1No8Temp_I8=crrcMvb->getsignedChar(0xC12,6);
+    TD1CT_Car2No1Temp_I8=crrcMvb->getsignedChar(0xC12,9);
+    TD1CT_Car2No2Temp_I8=crrcMvb->getsignedChar(0xC12,8);
+    TD1CT_Car2No3Temp_I8=crrcMvb->getsignedChar(0xC12,11);
+    TD1CT_Car2No4Temp_I8=crrcMvb->getsignedChar(0xC12,10);
+    TD1CT_Car2No5Temp_I8=crrcMvb->getsignedChar(0xC12,13);
+    TD1CT_Car2No6Temp_I8=crrcMvb->getsignedChar(0xC12,12);
+    TD1CT_Car2No7Temp_I8=crrcMvb->getsignedChar(0xC12,15);
+    TD1CT_Car2No8Temp_I8=crrcMvb->getsignedChar(0xC12,14);
+    TD1CT_Car3No1Temp_I8=crrcMvb->getsignedChar(0xC12,17);
+    TD1CT_Car3No2Temp_I8=crrcMvb->getsignedChar(0xC12,16);
+    TD1CT_Car3No3Temp_I8=crrcMvb->getsignedChar(0xC12,19);
+    TD1CT_Car3No4Temp_I8=crrcMvb->getsignedChar(0xC12,18);
+    TD1CT_Car3No5Temp_I8=crrcMvb->getsignedChar(0xC12,21);
+    TD1CT_Car3No6Temp_I8=crrcMvb->getsignedChar(0xC12,20);
+    TD1CT_Car3No7Temp_I8=crrcMvb->getsignedChar(0xC12,23);
+    TD1CT_Car3No8Temp_I8=crrcMvb->getsignedChar(0xC12,22);
+    TD1CT_Car4No1Temp_I8=crrcMvb->getsignedChar(0xC12,25);
+    TD1CT_Car4No2Temp_I8=crrcMvb->getsignedChar(0xC12,24);
+    TD1CT_Car4No3Temp_I8=crrcMvb->getsignedChar(0xC12,27);
+    TD1CT_Car4No4Temp_I8=crrcMvb->getsignedChar(0xC12,26);
+    TD1CT_Car4No5Temp_I8=crrcMvb->getsignedChar(0xC12,29);
+    TD1CT_Car4No6Temp_I8=crrcMvb->getsignedChar(0xC12,28);
+    TD1CT_Car4No7Temp_I8=crrcMvb->getsignedChar(0xC12,31);
+    TD1CT_Car4No8Temp_I8=crrcMvb->getsignedChar(0xC12,30);
+
+    TD1CT_Car5No1Temp_I8=crrcMvb->getsignedChar(0xC13,1);
+    TD1CT_Car5No2Temp_I8=crrcMvb->getsignedChar(0xC13,0);
+    TD1CT_Car5No3Temp_I8=crrcMvb->getsignedChar(0xC13,3);
+    TD1CT_Car5No4Temp_I8=crrcMvb->getsignedChar(0xC13,2);
+    TD1CT_Car5No5Temp_I8=crrcMvb->getsignedChar(0xC13,5);
+    TD1CT_Car5No6Temp_I8=crrcMvb->getsignedChar(0xC13,4);
+    TD1CT_Car5No7Temp_I8=crrcMvb->getsignedChar(0xC13,7);
+    TD1CT_Car5No8Temp_I8=crrcMvb->getsignedChar(0xC13,6);
+    TD1CT_Car6No1Temp_I8=crrcMvb->getsignedChar(0xC13,9);
+    TD1CT_Car6No2Temp_I8=crrcMvb->getsignedChar(0xC13,8);
+    TD1CT_Car6No3Temp_I8=crrcMvb->getsignedChar(0xC13,11);
+    TD1CT_Car6No4Temp_I8=crrcMvb->getsignedChar(0xC13,10);
+    TD1CT_Car6No5Temp_I8=crrcMvb->getsignedChar(0xC13,13);
+    TD1CT_Car6No6Temp_I8=crrcMvb->getsignedChar(0xC13,12);
+    TD1CT_Car6No7Temp_I8=crrcMvb->getsignedChar(0xC13,15);
+    TD1CT_Car6No8Temp_I8=crrcMvb->getsignedChar(0xC13,14);
+
+
+    /****************************************************TDS2→CCU*******************************************************/
+    TD2CT_TDSlife_U16=crrcMvb->getUnsignedInt(0xC20,0);
+    TD2CT_SoftwareVersion_U16=crrcMvb->getUnsignedInt(0xC20,2);
+
+    TD2CT_TDSSlightFault_B1=crrcMvb->getBool(0xC20,5,7);
+    TD2CT_TDSMediumFault_B1=crrcMvb->getBool(0xC20,5,6);
+    TD2CT_TDSSeriousFault_B1=crrcMvb->getBool(0xC20,5,5);
+    TD2CT_TDSMaster_B1=crrcMvb->getBool(0xC20,5,4);
+    TD2CT_InternalBusFault_B1=crrcMvb->getBool(0xC20,5,3);
+    TD2CT_MVBLAT_B1=crrcMvb->getBool(0xC20,5,2);
+    TD2CT_MVBRLD_B1=crrcMvb->getBool(0xC20,5,1);
+
+    TD2CT_Car1No1Temp_I8=crrcMvb->getsignedChar(0xC22,1);
+    TD2CT_Car1No2Temp_I8=crrcMvb->getsignedChar(0xC22,0);
+    TD2CT_Car1No3Temp_I8=crrcMvb->getsignedChar(0xC22,3);
+    TD2CT_Car1No4Temp_I8=crrcMvb->getsignedChar(0xC22,2);
+    TD2CT_Car1No5Temp_I8=crrcMvb->getsignedChar(0xC22,5);
+    TD2CT_Car1No6Temp_I8=crrcMvb->getsignedChar(0xC22,4);
+    TD2CT_Car1No7Temp_I8=crrcMvb->getsignedChar(0xC22,7);
+    TD2CT_Car1No8Temp_I8=crrcMvb->getsignedChar(0xC22,6);
+    TD2CT_Car2No1Temp_I8=crrcMvb->getsignedChar(0xC22,9);
+    TD2CT_Car2No2Temp_I8=crrcMvb->getsignedChar(0xC22,8);
+    TD2CT_Car2No3Temp_I8=crrcMvb->getsignedChar(0xC22,11);
+    TD2CT_Car2No4Temp_I8=crrcMvb->getsignedChar(0xC22,10);
+    TD2CT_Car2No5Temp_I8=crrcMvb->getsignedChar(0xC22,13);
+    TD2CT_Car2No6Temp_I8=crrcMvb->getsignedChar(0xC22,12);
+    TD2CT_Car2No7Temp_I8=crrcMvb->getsignedChar(0xC22,15);
+    TD2CT_Car2No8Temp_I8=crrcMvb->getsignedChar(0xC22,14);
+    TD2CT_Car3No1Temp_I8=crrcMvb->getsignedChar(0xC22,17);
+    TD2CT_Car3No2Temp_I8=crrcMvb->getsignedChar(0xC22,16);
+    TD2CT_Car3No3Temp_I8=crrcMvb->getsignedChar(0xC22,19);
+    TD2CT_Car3No4Temp_I8=crrcMvb->getsignedChar(0xC22,18);
+    TD2CT_Car3No5Temp_I8=crrcMvb->getsignedChar(0xC22,21);
+    TD2CT_Car3No6Temp_I8=crrcMvb->getsignedChar(0xC22,20);
+    TD2CT_Car3No7Temp_I8=crrcMvb->getsignedChar(0xC22,23);
+    TD2CT_Car3No8Temp_I8=crrcMvb->getsignedChar(0xC22,22);
+    TD2CT_Car4No1Temp_I8=crrcMvb->getsignedChar(0xC22,25);
+    TD2CT_Car4No2Temp_I8=crrcMvb->getsignedChar(0xC22,24);
+    TD2CT_Car4No3Temp_I8=crrcMvb->getsignedChar(0xC22,27);
+    TD2CT_Car4No4Temp_I8=crrcMvb->getsignedChar(0xC22,26);
+    TD2CT_Car4No5Temp_I8=crrcMvb->getsignedChar(0xC22,29);
+    TD2CT_Car4No6Temp_I8=crrcMvb->getsignedChar(0xC22,28);
+    TD2CT_Car4No7Temp_I8=crrcMvb->getsignedChar(0xC22,31);
+    TD2CT_Car4No8Temp_I8=crrcMvb->getsignedChar(0xC22,30);
+
+    TD2CT_Car5No1Temp_I8=crrcMvb->getsignedChar(0xC23,1);
+    TD2CT_Car5No2Temp_I8=crrcMvb->getsignedChar(0xC23,0);
+    TD2CT_Car5No3Temp_I8=crrcMvb->getsignedChar(0xC23,3);
+    TD2CT_Car5No4Temp_I8=crrcMvb->getsignedChar(0xC23,2);
+    TD2CT_Car5No5Temp_I8=crrcMvb->getsignedChar(0xC23,5);
+    TD2CT_Car5No6Temp_I8=crrcMvb->getsignedChar(0xC23,4);
+    TD2CT_Car5No7Temp_I8=crrcMvb->getsignedChar(0xC23,7);
+    TD2CT_Car5No8Temp_I8=crrcMvb->getsignedChar(0xC23,6);
+    TD2CT_Car6No1Temp_I8=crrcMvb->getsignedChar(0xC23,9);
+    TD2CT_Car6No2Temp_I8=crrcMvb->getsignedChar(0xC23,8);
+    TD2CT_Car6No3Temp_I8=crrcMvb->getsignedChar(0xC23,11);
+    TD2CT_Car6No4Temp_I8=crrcMvb->getsignedChar(0xC23,10);
+    TD2CT_Car6No5Temp_I8=crrcMvb->getsignedChar(0xC23,13);
+    TD2CT_Car6No6Temp_I8=crrcMvb->getsignedChar(0xC23,12);
+    TD2CT_Car6No7Temp_I8=crrcMvb->getsignedChar(0xC23,15);
+    TD2CT_Car6No8Temp_I8=crrcMvb->getsignedChar(0xC23,14);
+
+    /***************************************************CCU→TDS******************************************************/
+    CTTD_CCULifeSignal_U16=crrcMvb->getUnsignedInt(0xC08,0);
+    CTTD_TotalMile_U32=crrcMvb->getUnsignedInt32(0xC08,2);
+
+    CTTD_Tc1MassValid_U16=crrcMvb->getUnsignedInt(0xC08,6);
+    CTTD_Mp1MassValid_U16=crrcMvb->getUnsignedInt(0xC08,8);
+    CTTD_M1MassValid_U16=crrcMvb->getUnsignedInt(0xC08,10);
+    CTTD_M2MassValid_U16=crrcMvb->getUnsignedInt(0xC08,12);
+    CTTD_Mp2MassValid_U16=crrcMvb->getUnsignedInt(0xC08,14);
+    CTTD_Tc2MassValid_U16=crrcMvb->getUnsignedInt(0xC08,16);
+    CTTD_NextStation_U16=crrcMvb->getUnsignedInt(0xC08,22);
+    CTTD_CurrentStation_U16=crrcMvb->getUnsignedInt(0xC08,24);
+    CTTD_NextStationDistance_U16=crrcMvb->getUnsignedInt(0xC08,26);
+    CTTD_LastStationDistance_U16=crrcMvb->getUnsignedInt(0xC08,28);
+
+    CTTD_QuitOperMode_B1=crrcMvb->getBool(0xC08,31,7);
+
+    CTTD_Tc1WheelDia_U16=crrcMvb->getUnsignedInt(0xC09,0);
+    CTTD_Mp1WheelDia_U16=crrcMvb->getUnsignedInt(0xC09,2);
+    CTTD_M1WheelDia_U16=crrcMvb->getUnsignedInt(0xC09,4);
+    CTTD_M2WheelDia_U16=crrcMvb->getUnsignedInt(0xC09,6);
+    CTTD_Mp2WheelDia_U16=crrcMvb->getUnsignedInt(0xC09,8);
+    CTTD_Tc2WheelDia_U16=crrcMvb->getUnsignedInt(0xC09,10);
+    CTTD_TrainSpeed_U16=crrcMvb->getUnsignedInt(0xC09,16);
+
+    CTTD_Tc2CabActive_B1=crrcMvb->getBool(0xC09,30,0);
+    CTTD_Tc1CabActive_B2=crrcMvb->getBool(0xC09,30,1);
+
+    CTTD_Tc2WheelSetValid_B1=crrcMvb->getBool(0xC09,31,2);
+    CTTD_Mp2WheelSetValid_B1=crrcMvb->getBool(0xC09,31,3);
+    CTTD_M2WheelSetValid_B1=crrcMvb->getBool(0xC09,31,4);
+    CTTD_M1WheelSetValid_B1=crrcMvb->getBool(0xC09,31,5);
+    CTTD_Mp1WheelSetValid_B1=crrcMvb->getBool(0xC09,31,6);
+    CTTD_Tc1WheelSetValid_B1=crrcMvb->getBool(0xC09,31,7);
+
+    /******************************************************FAS1→CCU*****************************************************/
+    FS1CT_OverVolBattNum_U8=crrcMvb->getUnsignedChar(0xE50,0);
+
+    /******************************************************FAS2→CCU*****************************************************/
+    FS2CT_OverVolBattNum_U8=crrcMvb->getUnsignedChar(0xE60,0);
+
+    /*******************************************************CCU-FAS1****************************************************/
+    CTFS1_NetVoltage_U16=crrcMvb->getUnsignedInt(0xE58,0);
+
+    /*******************************************************CCU-FAS1****************************************************/
+    CTFS2_NetVoltage_U16=crrcMvb->getUnsignedInt(0xE68,0);
+
+    /*******************************************************BMS1→CCU****************************************************/
+    BM1CT_OverVolBattNum_U8=crrcMvb->getUnsignedChar(0xE10,0);
+    BM1CT_LowVolBattNum_U8=crrcMvb->getUnsignedChar(0xE10,1);
+    BM1CT_OverTempBattNum_U8=crrcMvb->getUnsignedChar(0xE10,2);
+    BM1CT_OverVolAlarmBatt_U8=crrcMvb->getUnsignedChar(0xE10,3);
+
+    BM1CT_OverVolAlarmBattVal_U16=crrcMvb->getUnsignedInt(0xE10,4);
+
+    BM1CT_LowVolAlarmBatt_U8=crrcMvb->getUnsignedChar(0xE10,6);
+
+    BM1CT_LowVolAlarmBattVal_U16=crrcMvb->getUnsignedInt(0xE10,7);
+
+    BM1CT_OverTempAlarmBatt_U8=crrcMvb->getUnsignedChar(0xE10,9);
+
+    BM1CT_OverTempAlarmBattVal_U16=crrcMvb->getUnsignedInt(0xE10,10);
+
+    BM1CT_OnlyOverVolAlarm_B1=crrcMvb->getBool(0xE10,12,7);
+    BM1CT_OnlyLowVolAlarm_B1=crrcMvb->getBool(0xE10,12,6);
+    BM1CT_OnlyOverTempAlarm_B1=crrcMvb->getBool(0xE10,12,5);
+    BM1CT_WholeLowVolAlarm_B1=crrcMvb->getBool(0xE10,12,4);
+    BM1CT_InsetOverTempAlarm_B1=crrcMvb->getBool(0xE10,12,3);
+    BM1CT_OverChargeCurAlarm_B1=crrcMvb->getBool(0xE10,12,2);
+    BM1CT_OverDischargeCurAlarm_B1=crrcMvb->getBool(0xE10,12,1);
+    BM1CT_CapacityLeftLowAlarm_B1=crrcMvb->getBool(0xE10,12,0);
+
+    BM1CT_MonitorInitFaultAlarm_B1=crrcMvb->getBool(0xE10,13,7);
+    BM1CT_MVBLAT_B1=crrcMvb->getBool(0xE10,13,6);
+    BM1CT_MVBRLD_B1=crrcMvb->getBool(0xE10,13,5);
+
+    BM1CT_SoftVersion_U16=crrcMvb->getUnsignedInt(0xE10,14);
+
+    BM1CT_LifeSignal_U8=crrcMvb->getUnsignedChar(0xE10,16);
+    BM1CT_AlarmLampSta_U8=crrcMvb->getUnsignedChar(0xE10,17);
+
+    BM1CT_ChargeVolVal_U16=crrcMvb->getUnsignedInt(0xE10,19);
+    BM1CT_DischargeVolVal_U16=crrcMvb->getUnsignedInt(0xE10,21);
+    BM1CT_InsetTempVal_U16=crrcMvb->getUnsignedInt(0xE10,23);
+    BM1CT_ChargeCurVal_U16=crrcMvb->getUnsignedInt(0xE10,25);
+    BM1CT_DischargeCurVal_U16=crrcMvb->getUnsignedInt(0xE10,27);
+    BM1CT_CapacityLeft_U16=crrcMvb->getUnsignedInt(0xE10,29);
+
+
+    /*******************************************************BMS2→CCU****************************************************/
+    BM2CT_OverVolBattNum_U8=crrcMvb->getUnsignedChar(0xE20,0);
+    BM2CT_LowVolBattNum_U8=crrcMvb->getUnsignedChar(0xE20,1);
+    BM2CT_OverTempBattNum_U8=crrcMvb->getUnsignedChar(0xE20,2);
+    BM2CT_OverVolAlarmBatt_U8=crrcMvb->getUnsignedChar(0xE20,3);
+
+    BM2CT_OverVolAlarmBattVal_U16=crrcMvb->getUnsignedInt(0xE20,4);
+
+    BM2CT_LowVolAlarmBatt_U8=crrcMvb->getUnsignedChar(0xE20,6);
+
+    BM2CT_LowVolAlarmBattVal_U16=crrcMvb->getUnsignedInt(0xE20,7);
+
+    BM2CT_OverTempAlarmBatt_U8=crrcMvb->getUnsignedChar(0xE20,9);
+
+    BM2CT_OverTempAlarmBattVal_U16=crrcMvb->getUnsignedInt(0xE20,10);
+
+    BM2CT_OnlyOverVolAlarm_B1=crrcMvb->getBool(0xE20,12,7);
+    BM2CT_OnlyLowVolAlarm_B1=crrcMvb->getBool(0xE20,12,6);
+    BM2CT_OnlyOverTempAlarm_B1=crrcMvb->getBool(0xE20,12,5);
+    BM2CT_WholeLowVolAlarm_B1=crrcMvb->getBool(0xE20,12,4);
+    BM2CT_InsetOverTempAlarm_B1=crrcMvb->getBool(0xE20,12,3);
+    BM2CT_OverChargeCurAlarm_B1=crrcMvb->getBool(0xE20,12,2);
+    BM2CT_OverDischargeCurAlarm_B1=crrcMvb->getBool(0xE20,12,1);
+    BM2CT_CapacityLeftLowAlarm_B1=crrcMvb->getBool(0xE20,12,0);
+
+    BM2CT_MonitorInitFaultAlarm_B1=crrcMvb->getBool(0xE20,13,7);
+    BM2CT_MVBLAT_B1=crrcMvb->getBool(0xE20,13,6);
+    BM2CT_MVBRLD_B1=crrcMvb->getBool(0xE20,13,5);
+
+    BM2CT_SoftVersion_U16=crrcMvb->getUnsignedInt(0xE20,14);
+
+    BM2CT_LifeSignal_U8=crrcMvb->getUnsignedChar(0xE20,16);
+    BM2CT_AlarmLampSta_U8=crrcMvb->getUnsignedChar(0xE20,17);
+
+    BM2CT_ChargeVolVal_U16=crrcMvb->getUnsignedInt(0xE20,19);
+    BM2CT_DischargeVolVal_U16=crrcMvb->getUnsignedInt(0xE20,21);
+    BM2CT_InsetTempVal_U16=crrcMvb->getUnsignedInt(0xE20,23);
+    BM2CT_ChargeCurVal_U16=crrcMvb->getUnsignedInt(0xE20,25);
+    BM2CT_DischargeCurVal_U16=crrcMvb->getUnsignedInt(0xE20,27);
+    BM2CT_CapacityLeft_U16=crrcMvb->getUnsignedInt(0xE20,29);
+
+  /**********************************************************PCU1→CCU*******************************************************/
+    PN1CT_LfSgn_U16=crrcMvb->getUnsignedInt(0xF10,0);
+    PN1CT_ControllerStatus_B1=crrcMvb->getBool(0xF10,2,0);
+    PN1CT_MVBLAT_B1=crrcMvb->getBool(0xF10,3,0);
+    PN1CT_MVBRLD_B1=crrcMvb->getBool(0xF10,3,1);
+
+    PN1CT_VersionX_U8=crrcMvb->getUnsignedChar(0xF10,4);
+    PN1CT_VersionY_U8=crrcMvb->getUnsignedChar(0xF10,5);
+
+
+    /**********************************************************PCU2→CCU*******************************************************/
+      PN2CT_LfSgn_U16=crrcMvb->getUnsignedInt(0xF20,0);
+      PN2CT_ControllerStatus_B1=crrcMvb->getBool(0xF20,2,0);
+      PN2CT_MVBLAT_B1=crrcMvb->getBool(0xF20,3,0);
+      PN2CT_MVBRLD_B1=crrcMvb->getBool(0xF20,3,1);
+
+      PN2CT_VersionX_U8=crrcMvb->getUnsignedChar(0xF20,4);
+      PN2CT_VersionY_U8=crrcMvb->getUnsignedChar(0xF20,5);
+
+    /**********************************************************CCU→PCU*******************************************************/
+      CTPN_NetVoltage_U16=crrcMvb->getUnsignedInt(0xF08,0);
+
+      CTPN_CrrntPNO_U32=crrcMvb->getUnsignedInt32(0xF08,2);
+      CTPN_NextPNO_U32=crrcMvb->getUnsignedInt32(0xF08,6);
+      CTPN_DstntnPNO_U32=crrcMvb->getUnsignedInt32(0xF08,10);
+
+      CTPN_TARGETDIS_U16=crrcMvb->getUnsignedInt(0xF08,14);
+      CTPN_STARTINGDIS_U16=crrcMvb->getUnsignedInt(0xF08,16);
+
+      CTPN_CTRLSTATE_U8=crrcMvb->getUnsignedChar(0xF08,18);
+      CTPN_STATE_U8=crrcMvb->getUnsignedChar(0xF08,19);
+      CTPN_ATCOnline_U8=crrcMvb->getUnsignedChar(0xF08,20);
+
+      CTPN_AllDrClsd_B1=crrcMvb->getBool(0xF08,21,0);
+      CTPN_DrOpnd_B1=crrcMvb->getBool(0xF08,21,1);
+      CTPN_QuitOperMode_B1=crrcMvb->getBool(0xF08,21,2);
 
 
 

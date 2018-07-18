@@ -97,7 +97,8 @@ SOURCES += main.cpp\
     maintaincesoftwareversionpage.cpp \
     maintaincedatamanagepage.cpp \
     maintainceresetexcisionpage.cpp \
-    maintaincecommunicationstatepage.cpp
+    maintaincecommunicationstatepage.cpp \
+    simulation.cpp
 
 HEADERS  += widget.h \
     mybase.h \
@@ -185,7 +186,8 @@ HEADERS  += widget.h \
     maintaincesoftwareversionpage.h \
     maintaincedatamanagepage.h \
     maintainceresetexcisionpage.h \
-    maintaincecommunicationstatepage.h
+    maintaincecommunicationstatepage.h \
+    simulation.h
 
 FORMS    += widget.ui \
     header.ui \
@@ -221,7 +223,8 @@ FORMS    += widget.ui \
     maintaincesoftwareversionpage.ui \
     maintaincedatamanagepage.ui \
     maintainceresetexcisionpage.ui \
-    maintaincecommunicationstatepage.ui
+    maintaincecommunicationstatepage.ui \
+    simulation.ui
 
 RESOURCES += \
     Resource.qrc

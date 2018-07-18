@@ -8,6 +8,7 @@
 #include "vehiclerunstatepage.h"
 #include "crrcmvb.h"
 #include "crrcfault.h"
+#include "simulation.h"
 
 #include "vehiclestationbar.h"
 #include "vehicletrainarea.h"
@@ -72,6 +73,8 @@ Widget::Widget(QWidget *parent) :
     }
     crrcMvb = CrrcMvb::getCrrcMvb();
 
+    this->simulation=new Simulation();
+    this->simulation->hide();
 
     this->header = new Header(this);
     this->header->setMyBase(uTop,QString("标题栏"));
@@ -255,6 +258,7 @@ void Widget::updatePage()
     if(counter%2 == 0)
     {
         crrcMvb->synchronizeMvbData();
+        this->simulation->installMvb(crrcMvb);
     }
 
     // start fault scanning thread
@@ -787,5 +791,15 @@ void Widget::keyPressEvent(QKeyEvent *event)
     if (event->key() == Qt::Key_Escape)
     {
         this->close();
+    }
+    else if (event->key() == Qt::Key_S)
+    {
+        QDesktopWidget *desktop = QApplication::desktop();
+
+        // show a window uesd to manipulate the mvb ports and change page
+        simulation->raise();
+        simulation->move((desktop->width() - simulation->width()) / 2, (desktop->height() - simulation->height()) / 2);
+        simulation->show();
+
     }
 }

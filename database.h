@@ -1706,6 +1706,23 @@ public:
             TD2CT_Car6No5Temp_I8,TD2CT_Car6No6Temp_I8,TD2CT_Car6No7Temp_I8,TD2CT_Car6No8Temp_I8;//6车5位轴端传感器温度	6车6位轴端传感器温度	6车7位轴端传感器温度	6车8位轴端传感器温度
 
 
+    //CCU-TDS
+    unsigned short CTTD_CCULifeSignal_U16;//CCU生命信号
+    unsigned int CTTD_TotalMile_U32;//累计运行里程
+
+    unsigned short CTTD_Tc1MassValid_U16, CTTD_Mp1MassValid_U16,CTTD_M1MassValid_U16,CTTD_M2MassValid_U16,//Tc1车载荷 Mp1车载荷 M1车载荷 M2车载荷
+            CTTD_Mp2MassValid_U16,CTTD_Tc2MassValid_U16,CTTD_NextStation_U16,CTTD_CurrentStation_U16,//Mp2车载荷   Tc2车载荷  下一站ID  当前站ID
+            CTTD_NextStationDistance_U16, CTTD_LastStationDistance_U16;//到下一站距离   离开上一站距离
+
+    bool CTTD_QuitOperMode_B1;
+
+    unsigned short CTTD_Tc1WheelDia_U16,  CTTD_Mp1WheelDia_U16,  CTTD_M1WheelDia_U16, CTTD_M2WheelDia_U16,//Tc1车轮径  Mp1车轮径 M1车轮径  M2车轮径
+            CTTD_Mp2WheelDia_U16, CTTD_Tc2WheelDia_U16,  CTTD_TrainSpeed_U16;//Mp2车轮径 Tc2车轮径 列车速度
+
+    bool CTTD_Tc2CabActive_B1,  CTTD_Tc1CabActive_B2, CTTD_Tc2WheelSetValid_B1,  CTTD_Mp2WheelSetValid_B1,//Tc2车司机室激活 Tc1车司机室激活  Tc2车轮径设置有效  Mp2车轮径设置有效
+            CTTD_M2WheelSetValid_B1, CTTD_M1WheelSetValid_B1,CTTD_Mp1WheelSetValid_B1, CTTD_Tc1WheelSetValid_B1;//M2车轮径设置有效 M1车轮径设置有效   Mp1车轮径设置有效  Tc1车轮径设置有效
+
+
     //FAS1-CCU
     //0xE50
     unsigned char FS1CT_OverVolBattNum_U8;//超压电池数量
