@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'mybase.h'
 **
-** Created: Thu Jul 19 03:02:26 2018
+** Created: Thu Jul 19 19:25:41 2018
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!

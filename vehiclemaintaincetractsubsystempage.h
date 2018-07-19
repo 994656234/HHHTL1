@@ -18,6 +18,10 @@ public:
 
 private:
     Ui::VehicleMaintainceTractSubsystemPage *ui;
+
+private slots:
+    void on_BTNHome_pressed();
+    void on_BTN1_pressed();
 };
 
 #endif // VEHICLEMAINTAINCETRACTSUBSYSTEMPAGE_H

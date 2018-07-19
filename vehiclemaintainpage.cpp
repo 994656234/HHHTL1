@@ -106,15 +106,15 @@ void VehicleMaintainPage::NBpressEvent()
     }
     else if(BTNName=="BTN_TractSubsystem")
     {
-
+        changePage(uVehicleMaintainceTractSubsystemPage);
     }
     else if(BTNName=="BTN_BrakeSubsystem")
     {
-
+        changePage(uVehicleMaintainceBrakeSubsystemPage);
     }
     else if(BTNName=="BTN_AuxiliarySubsystem")
     {
-
+        changePage(uVehicleMaintainceAuxiliarySubsystemPage);
     }
     else if(BTNName=="BTN_BatterySubsystem")
     {

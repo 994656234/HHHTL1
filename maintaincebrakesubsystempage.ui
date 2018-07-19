@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>VehicleMaintainceTractSubsystemPage</class>
- <widget class="QWidget" name="VehicleMaintainceTractSubsystemPage">
+ <class>MaintainceBrakeSubsystemPage</class>
+ <widget class="QWidget" name="MaintainceBrakeSubsystemPage">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -14,31 +14,12 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(0, 0, 50);</string>
+   <string notr="true">background-color: rgb(0, 0, 0);</string>
   </property>
-  <widget class="QPushButton" name="BTN1">
+  <widget class="QPushButton" name="BTN5">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>620</y>
-     <width>100</width>
-     <height>80</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 20px, &quot;微软雅黑&quot;;color: black;transparent;background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 rgba(170,170,170,255),stop:1 rgba(150,150,150,255));</string>
-   </property>
-   <property name="text">
-    <string>返回</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="BTN8">
-   <property name="geometry">
-    <rect>
-     <x>724</x>
+     <x>418</x>
      <y>620</y>
      <width>100</width>
      <height>80</height>
@@ -57,10 +38,29 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="BTN3">
+  <widget class="QPushButton" name="BTN2">
    <property name="geometry">
     <rect>
-     <x>214</x>
+     <x>112</x>
+     <y>620</y>
+     <width>100</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20px, &quot;微软雅黑&quot;;color: black;transparent;background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 rgba(170,170,170,255),stop:1 rgba(150,150,150,255));</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BTN8">
+   <property name="geometry">
+    <rect>
+     <x>724</x>
      <y>620</y>
      <width>100</width>
      <height>80</height>
@@ -101,29 +101,10 @@
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="BTN2">
+  <widget class="QPushButton" name="BTN4">
    <property name="geometry">
     <rect>
-     <x>112</x>
-     <y>620</y>
-     <width>100</width>
-     <height>80</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 20px, &quot;微软雅黑&quot;;color: black;transparent;background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 rgba(170,170,170,255),stop:1 rgba(150,150,150,255));</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="BTN7">
-   <property name="geometry">
-    <rect>
-     <x>622</x>
+     <x>316</x>
      <y>620</y>
      <width>100</width>
      <height>80</height>
@@ -137,6 +118,66 @@
     color: black;
 	transparent;background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 rgba(170,170,170,255),stop:1 rgba(150,150,150,255));
 </string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BTN3">
+   <property name="geometry">
+    <rect>
+     <x>214</x>
+     <y>620</y>
+     <width>100</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	font: 20px, &quot;微软雅黑&quot;;
+    color: black;
+	transparent;background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 rgba(170,170,170,255),stop:1 rgba(150,150,150,255));
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BTN1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>620</y>
+     <width>100</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20px, &quot;微软雅黑&quot;;color: black;transparent;background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 rgba(170,170,170,255),stop:1 rgba(150,150,150,255));</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BTNHome">
+   <property name="geometry">
+    <rect>
+     <x>928</x>
+     <y>620</y>
+     <width>91</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/image/Home.png);</string>
    </property>
    <property name="text">
     <string/>
@@ -161,54 +202,13 @@
 </string>
    </property>
    <property name="text">
-    <string/>
+    <string>确定</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="BTN5">
+  <widget class="QPushButton" name="BTN7">
    <property name="geometry">
     <rect>
-     <x>418</x>
-     <y>620</y>
-     <width>100</width>
-     <height>80</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">	font: 20px, &quot;微软雅黑&quot;;
-    color: black;
-	transparent;background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 rgba(170,170,170,255),stop:1 rgba(150,150,150,255));
-</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="BTNHome">
-   <property name="geometry">
-    <rect>
-     <x>928</x>
-     <y>620</y>
-     <width>91</width>
-     <height>80</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(:/images/image/Home.png);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="BTN4">
-   <property name="geometry">
-    <rect>
-     <x>316</x>
+     <x>622</x>
      <y>620</y>
      <width>100</width>
      <height>80</height>

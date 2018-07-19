@@ -43,6 +43,9 @@
 #include "vehiclesetbrakeparampage.h"
 #include "vehiclesetintensitycontrolpage.h"
 #include "vehiclesetbraketestpage.h"
+#include "vehiclemaintaincetractsubsystempage.h"
+#include "maintaincebrakesubsystempage.h"
+#include "maintainceauxiliarysubsystempage.h"
 
 Widget::Widget(QWidget *parent) :
     QWidget(parent),
@@ -221,6 +224,18 @@ Widget::Widget(QWidget *parent) :
     this->vehicleMaintainceCommunicationStatePage->setMyBase(uMiddle,QString("通信状态界面"));
     this->vehicleMaintainceCommunicationStatePage->hide();
 
+    this->vehicleMaintainceTractSubsystemPage=new VehicleMaintainceTractSubsystemPage(this);
+    this->vehicleMaintainceTractSubsystemPage->setMyBase(uMiddle,QString("牵引子系统界面"));
+    this->vehicleMaintainceTractSubsystemPage->hide();
+
+    this->vehicleMaintainceBrakeSubsystemPage=new MaintainceBrakeSubsystemPage(this);
+    this->vehicleMaintainceBrakeSubsystemPage->setMyBase(uMiddle,QString("制动子系统界面"));
+    this->vehicleMaintainceBrakeSubsystemPage->hide();
+
+    this->vehicleMaintainceAuxiliarySubsystemPage=new MaintainceAuxiliarySubsystemPage(this);
+    this->vehicleMaintainceAuxiliarySubsystemPage->setMyBase(uMiddle,QString("辅助子系统界面"));
+    this->vehicleMaintainceAuxiliarySubsystemPage->hide();
+
     this->widgets.insert(uVehicleRunStatePage,this->vehicleRunStatePage);
     this->widgets.insert(uVehicleStationBar,this->vehicleStationBar);
     this->widgets.insert(uVehicleTrainArea,this->vehicleTrainArea);
@@ -255,6 +270,9 @@ Widget::Widget(QWidget *parent) :
     this->widgets.insert(uVehicleSetBrakeParamPage,this->vehicleSetBrakeParamPage);
     this->widgets.insert(uVehicleSetIntensityControlPage,this->vehicleSetIntensityControlPage);
     this->widgets.insert(uVehicleSetBrakeTestPage,this->vehicleSetBrakeTestPage);
+    this->widgets.insert(uVehicleMaintainceTractSubsystemPage,this->vehicleMaintainceTractSubsystemPage);
+    this->widgets.insert(uVehicleMaintainceBrakeSubsystemPage,this->vehicleMaintainceBrakeSubsystemPage);
+    this->widgets.insert(uVehicleMaintainceAuxiliarySubsystemPage,this->vehicleMaintainceAuxiliarySubsystemPage);
 }
 
 Widget::~Widget()

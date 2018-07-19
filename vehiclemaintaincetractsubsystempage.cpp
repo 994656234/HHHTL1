@@ -12,3 +12,13 @@ VehicleMaintainceTractSubsystemPage::~VehicleMaintainceTractSubsystemPage()
 {
     delete ui;
 }
+
+void VehicleMaintainceTractSubsystemPage::on_BTN1_pressed()
+{
+    changePage(uVehicleMaintainPage);
+}
+
+void VehicleMaintainceTractSubsystemPage::on_BTNHome_pressed()
+{
+    changePage(uVehicleTrainArea);
+}
