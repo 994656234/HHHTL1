@@ -46,6 +46,8 @@
 #include "vehiclemaintaincetractsubsystempage.h"
 #include "maintaincebrakesubsystempage.h"
 #include "maintainceauxiliarysubsystempage.h"
+#include "maintainceaccumulatorsubsystempage.h"
+#include "maintaincerunninggearsubsystempage.h"
 
 Widget::Widget(QWidget *parent) :
     QWidget(parent),
@@ -236,6 +238,14 @@ Widget::Widget(QWidget *parent) :
     this->vehicleMaintainceAuxiliarySubsystemPage->setMyBase(uMiddle,QString("辅助子系统界面"));
     this->vehicleMaintainceAuxiliarySubsystemPage->hide();
 
+    this->vehicleMaintainceAccumulatorSubsystemPage=new MaintainceAccumulatorSubsystemPage(this);
+    this->vehicleMaintainceAccumulatorSubsystemPage->setMyBase(uMiddle,QString("蓄电池子系统界面"));
+    this->vehicleMaintainceAccumulatorSubsystemPage->hide();
+
+    this->vehicleMaintainceRunningGearSubsystemPage=new MaintainceRunningGearSubsystemPage(this);
+    this->vehicleMaintainceRunningGearSubsystemPage->setMyBase(uMiddle,QString("走形部子系统界面"));
+    this->vehicleMaintainceRunningGearSubsystemPage->hide();
+
     this->widgets.insert(uVehicleRunStatePage,this->vehicleRunStatePage);
     this->widgets.insert(uVehicleStationBar,this->vehicleStationBar);
     this->widgets.insert(uVehicleTrainArea,this->vehicleTrainArea);
@@ -273,6 +283,8 @@ Widget::Widget(QWidget *parent) :
     this->widgets.insert(uVehicleMaintainceTractSubsystemPage,this->vehicleMaintainceTractSubsystemPage);
     this->widgets.insert(uVehicleMaintainceBrakeSubsystemPage,this->vehicleMaintainceBrakeSubsystemPage);
     this->widgets.insert(uVehicleMaintainceAuxiliarySubsystemPage,this->vehicleMaintainceAuxiliarySubsystemPage);
+    this->widgets.insert(uVehicleMaintainceAccumulatorSubsystemPage,this->vehicleMaintainceAccumulatorSubsystemPage);
+    this->widgets.insert(uVehicleMaintainceRunningGearSubsystemPage,this->vehicleMaintainceRunningGearSubsystemPage);
 }
 
 Widget::~Widget()

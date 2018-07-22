@@ -104,7 +104,9 @@ SOURCES += main.cpp\
     vehiclesetbraketestpage.cpp \
     vehiclemaintaincetractsubsystempage.cpp \
     maintaincebrakesubsystempage.cpp \
-    maintainceauxiliarysubsystempage.cpp
+    maintainceauxiliarysubsystempage.cpp \
+    maintainceaccumulatorsubsystempage.cpp \
+    maintaincerunninggearsubsystempage.cpp
 
 HEADERS  += widget.h \
     mybase.h \
@@ -199,7 +201,9 @@ HEADERS  += widget.h \
     vehiclesetbraketestpage.h \
     vehiclemaintaincetractsubsystempage.h \
     maintaincebrakesubsystempage.h \
-    maintainceauxiliarysubsystempage.h
+    maintainceauxiliarysubsystempage.h \
+    maintainceaccumulatorsubsystempage.h \
+    maintaincerunninggearsubsystempage.h
 
 FORMS    += widget.ui \
     header.ui \
@@ -242,7 +246,9 @@ FORMS    += widget.ui \
     vehiclesetbraketestpage.ui \
     vehiclemaintaincetractsubsystempage.ui \
     maintaincebrakesubsystempage.ui \
-    maintainceauxiliarysubsystempage.ui
+    maintainceauxiliarysubsystempage.ui \
+    maintainceaccumulatorsubsystempage.ui \
+    maintaincerunninggearsubsystempage.ui
 
 RESOURCES += \
     Resource.qrc

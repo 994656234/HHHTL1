@@ -118,11 +118,11 @@ void VehicleMaintainPage::NBpressEvent()
     }
     else if(BTNName=="BTN_BatterySubsystem")
     {
-
+        changePage(uVehicleMaintainceAccumulatorSubsystemPage);
     }
     else if(BTNName=="BTN_BogieLampSubsystem")
     {
-
+        changePage(uVehicleMaintainceRunningGearSubsystemPage);
     }
     else if(BTNName=="BTN_HMIInitSet")
     {

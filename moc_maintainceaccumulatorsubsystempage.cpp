@@ -1,15 +1,15 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'maintaincebrakesubsystempage.h'
+** Meta object code from reading C++ file 'maintainceaccumulatorsubsystempage.h'
 **
-** Created: Thu Jul 19 20:42:16 2018
+** Created: Thu Jul 19 20:42:21 2018
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "maintaincebrakesubsystempage.h"
+#include "maintainceaccumulatorsubsystempage.h"
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'maintaincebrakesubsystempage.h' doesn't include <QObject>."
+#error "The header file 'maintainceaccumulatorsubsystempage.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 62
 #error "This file was generated using the moc from 4.6.3. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -17,7 +17,7 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-static const uint qt_meta_data_MaintainceBrakeSubsystemPage[] = {
+static const uint qt_meta_data_MaintainceAccumulatorSubsystemPage[] = {
 
  // content:
        4,       // revision
@@ -31,40 +31,40 @@ static const uint qt_meta_data_MaintainceBrakeSubsystemPage[] = {
        0,       // signalCount
 
  // slots: signature, parameters, type, tag, flags
-      30,   29,   29,   29, 0x08,
-      51,   29,   29,   29, 0x08,
+      36,   35,   35,   35, 0x08,
+      57,   35,   35,   35, 0x08,
 
        0        // eod
 };
 
-static const char qt_meta_stringdata_MaintainceBrakeSubsystemPage[] = {
-    "MaintainceBrakeSubsystemPage\0\0"
+static const char qt_meta_stringdata_MaintainceAccumulatorSubsystemPage[] = {
+    "MaintainceAccumulatorSubsystemPage\0\0"
     "on_BTNHome_pressed()\0on_BTN1_pressed()\0"
 };
 
-const QMetaObject MaintainceBrakeSubsystemPage::staticMetaObject = {
-    { &MyBase::staticMetaObject, qt_meta_stringdata_MaintainceBrakeSubsystemPage,
-      qt_meta_data_MaintainceBrakeSubsystemPage, 0 }
+const QMetaObject MaintainceAccumulatorSubsystemPage::staticMetaObject = {
+    { &MyBase::staticMetaObject, qt_meta_stringdata_MaintainceAccumulatorSubsystemPage,
+      qt_meta_data_MaintainceAccumulatorSubsystemPage, 0 }
 };
 
 #ifdef Q_NO_DATA_RELOCATION
-const QMetaObject &MaintainceBrakeSubsystemPage::getStaticMetaObject() { return staticMetaObject; }
+const QMetaObject &MaintainceAccumulatorSubsystemPage::getStaticMetaObject() { return staticMetaObject; }
 #endif //Q_NO_DATA_RELOCATION
 
-const QMetaObject *MaintainceBrakeSubsystemPage::metaObject() const
+const QMetaObject *MaintainceAccumulatorSubsystemPage::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
 }
 
-void *MaintainceBrakeSubsystemPage::qt_metacast(const char *_clname)
+void *MaintainceAccumulatorSubsystemPage::qt_metacast(const char *_clname)
 {
     if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_MaintainceBrakeSubsystemPage))
-        return static_cast<void*>(const_cast< MaintainceBrakeSubsystemPage*>(this));
+    if (!strcmp(_clname, qt_meta_stringdata_MaintainceAccumulatorSubsystemPage))
+        return static_cast<void*>(const_cast< MaintainceAccumulatorSubsystemPage*>(this));
     return MyBase::qt_metacast(_clname);
 }
 
-int MaintainceBrakeSubsystemPage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int MaintainceAccumulatorSubsystemPage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = MyBase::qt_metacall(_c, _id, _a);
     if (_id < 0)

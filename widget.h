@@ -56,6 +56,8 @@ class VehicleSetBrakeTestPage;
 class VehicleMaintainceTractSubsystemPage;
 class MaintainceBrakeSubsystemPage;
 class MaintainceAuxiliarySubsystemPage;
+class MaintainceAccumulatorSubsystemPage;
+class MaintainceRunningGearSubsystemPage;
 
 class Widget : public QWidget
 {
@@ -121,6 +123,8 @@ private:
     VehicleMaintainceTractSubsystemPage* vehicleMaintainceTractSubsystemPage;
     MaintainceBrakeSubsystemPage* vehicleMaintainceBrakeSubsystemPage;
     MaintainceAuxiliarySubsystemPage* vehicleMaintainceAuxiliarySubsystemPage;
+    MaintainceAccumulatorSubsystemPage* vehicleMaintainceAccumulatorSubsystemPage;
+    MaintainceRunningGearSubsystemPage* vehicleMaintainceRunningGearSubsystemPage;
 };
 
 #endif // WIDGET_H
