@@ -106,7 +106,9 @@ SOURCES += main.cpp\
     maintaincebrakesubsystempage.cpp \
     maintainceauxiliarysubsystempage.cpp \
     maintainceaccumulatorsubsystempage.cpp \
-    maintaincerunninggearsubsystempage.cpp
+    maintaincerunninggearsubsystempage.cpp \
+    faulteventpage.cpp \
+    bypasspage.cpp
 
 HEADERS  += widget.h \
     mybase.h \
@@ -203,7 +205,9 @@ HEADERS  += widget.h \
     maintaincebrakesubsystempage.h \
     maintainceauxiliarysubsystempage.h \
     maintainceaccumulatorsubsystempage.h \
-    maintaincerunninggearsubsystempage.h
+    maintaincerunninggearsubsystempage.h \
+    faulteventpage.h \
+    bypasspage.h
 
 FORMS    += widget.ui \
     header.ui \
@@ -248,7 +252,9 @@ FORMS    += widget.ui \
     maintaincebrakesubsystempage.ui \
     maintainceauxiliarysubsystempage.ui \
     maintainceaccumulatorsubsystempage.ui \
-    maintaincerunninggearsubsystempage.ui
+    maintaincerunninggearsubsystempage.ui \
+    faulteventpage.ui \
+    bypasspage.ui
 
 RESOURCES += \
     Resource.qrc

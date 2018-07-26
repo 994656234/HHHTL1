@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'navigator.ui'
 **
-** Created: Tue Jul 17 22:05:23 2018
+** Created: Wed Jul 25 20:45:05 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -26,7 +26,7 @@ public:
     QPushButton *BTNEvent;
     QPushButton *BTNSetting;
     QPushButton *BTNMaintaince;
-    QPushButton *BTNSpare1;
+    QPushButton *BTNByPass;
     QPushButton *BTNArriveB;
     QPushButton *BTNLeaveB;
     QPushButton *BTNSkipback;
@@ -60,11 +60,11 @@ public:
         BTNMaintaince->setObjectName(QString::fromUtf8("BTNMaintaince"));
         BTNMaintaince->setGeometry(QRect(214, 0, 100, 80));
         BTNMaintaince->setFocusPolicy(Qt::NoFocus);
-        BTNSpare1 = new QPushButton(Navigator);
-        BTNSpare1->setObjectName(QString::fromUtf8("BTNSpare1"));
-        BTNSpare1->setGeometry(QRect(316, 0, 100, 80));
-        BTNSpare1->setFocusPolicy(Qt::NoFocus);
-        BTNSpare1->setStyleSheet(QString::fromUtf8(""));
+        BTNByPass = new QPushButton(Navigator);
+        BTNByPass->setObjectName(QString::fromUtf8("BTNByPass"));
+        BTNByPass->setGeometry(QRect(316, 0, 100, 80));
+        BTNByPass->setFocusPolicy(Qt::NoFocus);
+        BTNByPass->setStyleSheet(QString::fromUtf8(""));
         BTNArriveB = new QPushButton(Navigator);
         BTNArriveB->setObjectName(QString::fromUtf8("BTNArriveB"));
         BTNArriveB->setGeometry(QRect(418, 0, 100, 80));
@@ -108,7 +108,7 @@ public:
 "\344\277\241\346\201\257", 0, QApplication::UnicodeUTF8));
         BTNSetting->setText(QApplication::translate("Navigator", "\350\256\276\347\275\256", 0, QApplication::UnicodeUTF8));
         BTNMaintaince->setText(QApplication::translate("Navigator", "\347\273\264\346\212\244", 0, QApplication::UnicodeUTF8));
-        BTNSpare1->setText(QApplication::translate("Navigator", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
+        BTNByPass->setText(QApplication::translate("Navigator", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
         BTNArriveB->setText(QApplication::translate("Navigator", "\345\270\256\345\212\251", 0, QApplication::UnicodeUTF8));
         BTNLeaveB->setText(QString());
         BTNSkipback->setText(QString());

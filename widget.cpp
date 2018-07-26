@@ -48,6 +48,8 @@
 #include "maintainceauxiliarysubsystempage.h"
 #include "maintainceaccumulatorsubsystempage.h"
 #include "maintaincerunninggearsubsystempage.h"
+#include "faulteventpage.h"
+#include "bypasspage.h"
 
 Widget::Widget(QWidget *parent) :
     QWidget(parent),
@@ -246,6 +248,14 @@ Widget::Widget(QWidget *parent) :
     this->vehicleMaintainceRunningGearSubsystemPage->setMyBase(uMiddle,QString("走形部子系统界面"));
     this->vehicleMaintainceRunningGearSubsystemPage->hide();
 
+    this->vehicleFaultEventPage=new FaultEventPage(this);
+    this->vehicleFaultEventPage->setMyBase(uMiddle,QString("当前故障页面"));
+    this->vehicleFaultEventPage->hide();
+
+    this->vehicleByPassPage=new ByPassPage(this);
+    this->vehicleByPassPage->setMyBase(uMiddle,QString("旁路界面"));
+    this->vehicleByPassPage->hide();
+
     this->widgets.insert(uVehicleRunStatePage,this->vehicleRunStatePage);
     this->widgets.insert(uVehicleStationBar,this->vehicleStationBar);
     this->widgets.insert(uVehicleTrainArea,this->vehicleTrainArea);
@@ -285,6 +295,8 @@ Widget::Widget(QWidget *parent) :
     this->widgets.insert(uVehicleMaintainceAuxiliarySubsystemPage,this->vehicleMaintainceAuxiliarySubsystemPage);
     this->widgets.insert(uVehicleMaintainceAccumulatorSubsystemPage,this->vehicleMaintainceAccumulatorSubsystemPage);
     this->widgets.insert(uVehicleMaintainceRunningGearSubsystemPage,this->vehicleMaintainceRunningGearSubsystemPage);
+    this->widgets.insert(uVehicleFaultEventPage,this->vehicleFaultEventPage);
+    this->widgets.insert(uVehicleByPassPage,this->vehicleByPassPage);
 }
 
 Widget::~Widget()

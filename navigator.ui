@@ -73,7 +73,7 @@ font: 20px, &quot;微软雅黑&quot;;color: black;transparent;background:qlinear
     <string>维护</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="BTNSpare1">
+  <widget class="QPushButton" name="BTNByPass">
    <property name="geometry">
     <rect>
      <x>316</x>
@@ -105,9 +105,7 @@ font: 20px, &quot;微软雅黑&quot;;color: black;transparent;background:qlinear
     <enum>Qt::NoFocus</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">
-
-</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>帮助</string>

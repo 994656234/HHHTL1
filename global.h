@@ -77,6 +77,8 @@ enum pageIndex
     uVehicleMaintainceAuxiliarySubsystemPage,
     uVehicleMaintainceAccumulatorSubsystemPage,
     uVehicleMaintainceRunningGearSubsystemPage,
+    uVehicleFaultEventPage,
+    uVehicleByPassPage,
 };
 
 #define _LOG qDebug() << QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss") << __FILE__ << __LINE__

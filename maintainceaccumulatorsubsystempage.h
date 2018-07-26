@@ -1,6 +1,7 @@
 #ifndef MAINTAINCEACCUMULATORSUBSYSTEMPAGE_H
 #define MAINTAINCEACCUMULATORSUBSYSTEMPAGE_H
 #include "mybase.h"
+#include "qpainter.h"
 
 #include <QWidget>
 
@@ -18,6 +19,7 @@ public:
 
 private:
     Ui::MaintainceAccumulatorSubsystemPage *ui;
+    void paintEvent(QPaintEvent *event);
 
 private slots:
     void on_BTNHome_pressed();

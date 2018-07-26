@@ -322,6 +322,22 @@ QString CrrcFault::getCurrentFaultLevel(unsigned short int index)
         return QString::number(this->FaultTypeHash[this->currentFaultList.at(index).ID].FaultLevel);
     }
 }
+bool CrrcFault::getCurrentFaultConfirm(unsigned short int index)
+{
+    QMutexLocker locker(&m_lock);
+
+    if (index >= this->currentFaultList.size())
+    {
+        qDebug() << "the index: "<<index<<" is larger than the current fault list"<<this->currentFaultList.size()<<", please check it" << __FILE__ << __LINE__;
+
+      //  return false;
+    }
+    else
+    {
+        return this->currentFaultList.at(index).IsConfirm;
+    }
+}
+
 QString CrrcFault::getHistoryFaultLevel(unsigned short int index)
 {
     QMutexLocker locker(&m_lock);
@@ -490,7 +506,21 @@ QString CrrcFault::getHistoryFaultDescription(unsigned short int index)
         return this->FaultTypeHash[this->historyFaultList.at(index).ID].FaultDescription.trimmed();
     }
 }
+bool CrrcFault::getHistoryFaultConfirm(unsigned short int index)
+{
+    QMutexLocker locker(&m_lock);
 
+    if (index >= this->historyFaultList.size())
+    {
+        qDebug() << "the index: "<<index<<" is larger than the history fault list"<<this->historyFaultList.size()<<", please check it" << __FILE__ << __LINE__;
+
+        //return false;
+    }
+    else
+    {
+        return this->historyFaultList.at(index).IsConfirm;
+    }
+}
 void CrrcFault::readFaultTypeListFile()
 {
     this->crrcFaultMapper->GetFaultTypeHash(this->FaultTypeHash);

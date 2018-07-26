@@ -9,7 +9,7 @@ Navigator::Navigator(QWidget *parent) :
     ui->setupUi(this);
 
 
-    buttons<<this->ui->BTNEvent<<this->ui->BTNSetting<<this->ui->BTNMaintaince<<this->ui->BTNSpare1<<this->ui->BTNArriveB
+    buttons<<this->ui->BTNEvent<<this->ui->BTNSetting<<this->ui->BTNMaintaince<<this->ui->BTNByPass<<this->ui->BTNArriveB
             <<this->ui->BTNLeaveB<<this->ui->BTNSkipback<<this->ui->BTNSkipforward<<this->ui->BTNSpare2<<this->ui->BTNHome;
 
     foreach (QPushButton *button, buttons)
@@ -26,35 +26,29 @@ Navigator::~Navigator()
 void Navigator::NBpressEvent()
 {
     QString BTNname = ((QPushButton *)this->sender())->objectName();
-    for(int i = 0; i < buttons.size();i++)
-    {
-        buttons[i]->setStyleSheet(NButtonUP);
-    }
+
     if(BTNname == "BTNEvent")
     {
-        this->ui->BTNEvent->setStyleSheet(NButtonDOWN);
+        changePage(uVehicleFaultEventPage);
     }else if(BTNname == "BTNSetting")
     {
-        this->ui->BTNSetting->setStyleSheet(NButtonDOWN);
         changePage(uVehiclePasswordPage);
     }else if(BTNname == "BTNMaintaince")
     {
-        this->ui->BTNMaintaince->setStyleSheet(NButtonDOWN);
         changePage(uVehicleMaintainPage);
 
-    }else if(BTNname == "BTNArriveB")
+    }else if(BTNname == "BTNByPass")
     {
-        this->ui->BTNArriveB->setStyleSheet(NButtonDOWN);
+        changePage(uVehicleByPassPage);
     }else if(BTNname == "BTNLeaveB")
     {
-        this->ui->BTNLeaveB->setStyleSheet(NButtonDOWN);
+
     }else if(BTNname == "BTNSkipback")
     {
-        this->ui->BTNSkipback->setStyleSheet(NButtonDOWN);
 
     }else if(BTNname == "BTNSkipforward")
     {
-        this->ui->BTNSkipforward->setStyleSheet(NButtonDOWN);
+
 
     }else if(BTNname == "BTNHome")
     {
@@ -64,4 +58,12 @@ void Navigator::NBpressEvent()
 
     }
     this->ui->BTNHome->setStyleSheet("border-image: url(:/images/image/Home.png);");
+}
+
+void Navigator::refreshAllButtons()
+{
+    foreach(QPushButton* button,buttons)
+    {
+        button->setStyleSheet(NButtonUP);
+    }
 }

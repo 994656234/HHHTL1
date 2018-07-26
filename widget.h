@@ -58,6 +58,8 @@ class MaintainceBrakeSubsystemPage;
 class MaintainceAuxiliarySubsystemPage;
 class MaintainceAccumulatorSubsystemPage;
 class MaintainceRunningGearSubsystemPage;
+class FaultEventPage;
+class ByPassPage;
 
 class Widget : public QWidget
 {
@@ -125,6 +127,8 @@ private:
     MaintainceAuxiliarySubsystemPage* vehicleMaintainceAuxiliarySubsystemPage;
     MaintainceAccumulatorSubsystemPage* vehicleMaintainceAccumulatorSubsystemPage;
     MaintainceRunningGearSubsystemPage* vehicleMaintainceRunningGearSubsystemPage;
+    FaultEventPage* vehicleFaultEventPage;
+    ByPassPage* vehicleByPassPage;
 };
 
 #endif // WIDGET_H

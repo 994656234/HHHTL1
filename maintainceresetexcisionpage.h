@@ -2,6 +2,7 @@
 #define MAINTAINCERESETEXCISIONPAGE_H
 #include "mybase.h"
 #include "qpushbutton.h"
+#include "qpainter.h"
 
 #include <QWidget>
 
@@ -19,6 +20,7 @@ public:
 
 private:
     Ui::MaintainceResetExcisionPage *ui;
+    void paintEvent(QPaintEvent *event);
 private slots:
     void pushButtonPressedEvent();
 };

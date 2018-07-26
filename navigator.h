@@ -17,6 +17,7 @@ class Navigator : public MyBase
 public:
     explicit Navigator(QWidget *parent = 0);
     ~Navigator();
+    void refreshAllButtons();
 
 private:
     Ui::Navigator *ui;

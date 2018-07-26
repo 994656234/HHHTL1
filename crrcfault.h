@@ -90,6 +90,12 @@ public:
     QString getCurrentFaultLevel(unsigned short int index) ;
     QString getHistoryFaultLevel(unsigned short int index) ;
 
+    // add get fault confirm func
+    bool getCurrentFaultConfirm(unsigned short int index) ;
+    bool getHistoryFaultConfirm(unsigned short int index) ;
+
+
+
     // add fault query cnt
     unsigned int getFaultCntOfEachSystem(QString str);
     unsigned int getFaultCntOfEachVehicle(QString str);
