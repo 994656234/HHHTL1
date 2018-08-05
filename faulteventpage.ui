@@ -464,7 +464,8 @@ font:18px &quot;微软雅黑&quot;;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(0, 0, 50);
-border:0px;</string>
+border:0px;
+background-color:rgb(255,255 , 255, 0);</string>
    </property>
    <property name="text">
     <string/>
@@ -500,6 +501,7 @@ border:0px;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 50);
 font:18px &quot;微软雅黑&quot;;</string>
    </property>
    <property name="text">
@@ -599,7 +601,7 @@ font:18px &quot;微软雅黑&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(0, 0, 50);
+    <string notr="true">background-color: rgb(0, 0, 0,0);
 border:0px;</string>
    </property>
    <property name="text">
@@ -735,7 +737,7 @@ font:18px &quot;微软雅黑&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(0, 0, 50);
+    <string notr="true">background-color: rgb(0, 0, 0,0);
 border:0px;</string>
    </property>
    <property name="text">
@@ -910,7 +912,7 @@ font:18px &quot;微软雅黑&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(0, 0, 50);
+    <string notr="true">background-color: rgb(0, 0, 0,0);
 border:0px;</string>
    </property>
    <property name="text">
@@ -1046,7 +1048,7 @@ font:18px &quot;微软雅黑&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(0, 0, 50);
+    <string notr="true">background-color: rgb(0, 0, 0,0);
 border:0px;</string>
    </property>
    <property name="text">
@@ -1143,7 +1145,7 @@ font:18px &quot;微软雅黑&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(0, 0, 50);
+    <string notr="true">background-color: rgb(0, 0, 0,0);
 border:0px;</string>
    </property>
    <property name="text">
@@ -1279,7 +1281,7 @@ font:18px &quot;微软雅黑&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(0, 0, 50);
+    <string notr="true">background-color: rgb(0, 0, 0,0);
 border:0px;</string>
    </property>
    <property name="text">
@@ -1434,7 +1436,7 @@ font:18px &quot;微软雅黑&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(0, 0, 50);
+    <string notr="true">background-color: rgb(0, 0, 0,0);
 border:0px;</string>
    </property>
    <property name="text">
@@ -1570,7 +1572,7 @@ font:18px &quot;微软雅黑&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(0, 0, 50);
+    <string notr="true">background-color: rgb(0, 0, 0,0);
 border:0px;</string>
    </property>
    <property name="text">
@@ -1774,15 +1776,132 @@ font:18px &quot;微软雅黑&quot;;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <zorder>BTN_9_bg</zorder>
-  <zorder>BTN_8_bg</zorder>
-  <zorder>BTN_7_bg</zorder>
-  <zorder>BTN_6_bg</zorder>
-  <zorder>BTN_5_bg</zorder>
-  <zorder>BTN_4_bg</zorder>
-  <zorder>BTN_3_bg</zorder>
-  <zorder>BTN_2_bg</zorder>
-  <zorder>BTN_1_bg</zorder>
+  <widget class="QLabel" name="lbl_bg_1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>155</y>
+     <width>971</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_bg_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>195</y>
+     <width>971</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_bg_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>235</y>
+     <width>971</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_bg_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>275</y>
+     <width>971</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_bg_5">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>315</y>
+     <width>971</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_bg_6">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>355</y>
+     <width>971</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_bg_7">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>395</y>
+     <width>971</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_bg_8">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>435</y>
+     <width>971</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_bg_9">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>475</y>
+     <width>971</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>lbl_bg_9</zorder>
+  <zorder>lbl_bg_8</zorder>
+  <zorder>lbl_bg_7</zorder>
+  <zorder>lbl_bg_6</zorder>
+  <zorder>lbl_bg_5</zorder>
+  <zorder>lbl_bg_4</zorder>
+  <zorder>lbl_bg_3</zorder>
+  <zorder>lbl_bg_2</zorder>
+  <zorder>lbl_bg_1</zorder>
   <zorder>LBLM1</zorder>
   <zorder>LBLTC2</zorder>
   <zorder>LBLMP2</zorder>
@@ -1863,6 +1982,15 @@ font:18px &quot;微软雅黑&quot;;</string>
   <zorder>lbl_currentPage</zorder>
   <zorder>lbl_7</zorder>
   <zorder>lbl_allPage</zorder>
+  <zorder>BTN_1_bg</zorder>
+  <zorder>BTN_2_bg</zorder>
+  <zorder>BTN_3_bg</zorder>
+  <zorder>BTN_4_bg</zorder>
+  <zorder>BTN_5_bg</zorder>
+  <zorder>BTN_6_bg</zorder>
+  <zorder>BTN_7_bg</zorder>
+  <zorder>BTN_8_bg</zorder>
+  <zorder>BTN_9_bg</zorder>
  </widget>
  <resources/>
  <connections/>

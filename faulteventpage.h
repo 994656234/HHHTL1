@@ -23,7 +23,8 @@ public:
 private:
     Ui::FaultEventPage *ui;
     QList<QPushButton*> faultButtons;
-    QList<QLabel*> labelList1,labelList2,labelList3,labelList4,labelList5,labelList6,labelList7,labelList8,labelList9;
+    QList<QLabel*> labelList1,labelList2,labelList3,labelList4,labelList5,labelList6,labelList7,labelList8,labelList9,labelbg;
+    void refreshAll();
 private slots:
     void pushButtonPressedEvent();
     void faultPushButtonPressedEvent();

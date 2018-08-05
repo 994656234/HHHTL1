@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'faulteventpage.ui'
 **
-** Created: Thu Jul 26 02:52:36 2018
+** Created: Fri Jul 27 02:52:53 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -113,6 +113,15 @@ public:
     QLabel *lbl_currentPage;
     QLabel *lbl_7;
     QLabel *lbl_allPage;
+    QLabel *lbl_bg_1;
+    QLabel *lbl_bg_2;
+    QLabel *lbl_bg_3;
+    QLabel *lbl_bg_4;
+    QLabel *lbl_bg_5;
+    QLabel *lbl_bg_6;
+    QLabel *lbl_bg_7;
+    QLabel *lbl_bg_8;
+    QLabel *lbl_bg_9;
 
     void setupUi(QWidget *FaultEventPage)
     {
@@ -267,7 +276,8 @@ public:
         BTN_1_bg->setObjectName(QString::fromUtf8("BTN_1_bg"));
         BTN_1_bg->setGeometry(QRect(20, 155, 971, 36));
         BTN_1_bg->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 50);\n"
-"border:0px;"));
+"border:0px;\n"
+"background-color:rgb(255,255 , 255, 0);"));
         lbl_1_confirm = new QLabel(FaultEventPage);
         lbl_1_confirm->setObjectName(QString::fromUtf8("lbl_1_confirm"));
         lbl_1_confirm->setGeometry(QRect(20, 160, 16, 26));
@@ -277,6 +287,7 @@ public:
         lbl_1_startTime->setObjectName(QString::fromUtf8("lbl_1_startTime"));
         lbl_1_startTime->setGeometry(QRect(40, 160, 221, 26));
         lbl_1_startTime->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgb(0, 0, 50);\n"
 "font:18px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
         lbl_1_startTime->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         lbl_1_faultCode = new QLabel(FaultEventPage);
@@ -306,7 +317,7 @@ public:
         BTN_2_bg = new QPushButton(FaultEventPage);
         BTN_2_bg->setObjectName(QString::fromUtf8("BTN_2_bg"));
         BTN_2_bg->setGeometry(QRect(20, 195, 971, 36));
-        BTN_2_bg->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 50);\n"
+        BTN_2_bg->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0,0);\n"
 "border:0px;"));
         lbl_2_faultLevel = new QLabel(FaultEventPage);
         lbl_2_faultLevel->setObjectName(QString::fromUtf8("lbl_2_faultLevel"));
@@ -346,7 +357,7 @@ public:
         BTN_3_bg = new QPushButton(FaultEventPage);
         BTN_3_bg->setObjectName(QString::fromUtf8("BTN_3_bg"));
         BTN_3_bg->setGeometry(QRect(20, 235, 971, 36));
-        BTN_3_bg->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 50);\n"
+        BTN_3_bg->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0,0);\n"
 "border:0px;"));
         lbl_3_faultLevel = new QLabel(FaultEventPage);
         lbl_3_faultLevel->setObjectName(QString::fromUtf8("lbl_3_faultLevel"));
@@ -397,7 +408,7 @@ public:
         BTN_4_bg = new QPushButton(FaultEventPage);
         BTN_4_bg->setObjectName(QString::fromUtf8("BTN_4_bg"));
         BTN_4_bg->setGeometry(QRect(20, 275, 971, 36));
-        BTN_4_bg->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 50);\n"
+        BTN_4_bg->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0,0);\n"
 "border:0px;"));
         lbl_4_startTime = new QLabel(FaultEventPage);
         lbl_4_startTime->setObjectName(QString::fromUtf8("lbl_4_startTime"));
@@ -437,7 +448,7 @@ public:
         BTN_5_bg = new QPushButton(FaultEventPage);
         BTN_5_bg->setObjectName(QString::fromUtf8("BTN_5_bg"));
         BTN_5_bg->setGeometry(QRect(20, 315, 971, 36));
-        BTN_5_bg->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 50);\n"
+        BTN_5_bg->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0,0);\n"
 "border:0px;"));
         lbl_5_startTime = new QLabel(FaultEventPage);
         lbl_5_startTime->setObjectName(QString::fromUtf8("lbl_5_startTime"));
@@ -466,7 +477,7 @@ public:
         BTN_6_bg = new QPushButton(FaultEventPage);
         BTN_6_bg->setObjectName(QString::fromUtf8("BTN_6_bg"));
         BTN_6_bg->setGeometry(QRect(20, 355, 971, 36));
-        BTN_6_bg->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 50);\n"
+        BTN_6_bg->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0,0);\n"
 "border:0px;"));
         lbl_6_faultLevel = new QLabel(FaultEventPage);
         lbl_6_faultLevel->setObjectName(QString::fromUtf8("lbl_6_faultLevel"));
@@ -506,7 +517,7 @@ public:
         BTN_7_bg = new QPushButton(FaultEventPage);
         BTN_7_bg->setObjectName(QString::fromUtf8("BTN_7_bg"));
         BTN_7_bg->setGeometry(QRect(20, 395, 971, 36));
-        BTN_7_bg->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 50);\n"
+        BTN_7_bg->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0,0);\n"
 "border:0px;"));
         lbl_7_faultLevel = new QLabel(FaultEventPage);
         lbl_7_faultLevel->setObjectName(QString::fromUtf8("lbl_7_faultLevel"));
@@ -551,7 +562,7 @@ public:
         BTN_8_bg = new QPushButton(FaultEventPage);
         BTN_8_bg->setObjectName(QString::fromUtf8("BTN_8_bg"));
         BTN_8_bg->setGeometry(QRect(20, 435, 971, 36));
-        BTN_8_bg->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 50);\n"
+        BTN_8_bg->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0,0);\n"
 "border:0px;"));
         lbl_8_faultName = new QLabel(FaultEventPage);
         lbl_8_faultName->setObjectName(QString::fromUtf8("lbl_8_faultName"));
@@ -591,7 +602,7 @@ public:
         BTN_9_bg = new QPushButton(FaultEventPage);
         BTN_9_bg->setObjectName(QString::fromUtf8("BTN_9_bg"));
         BTN_9_bg->setGeometry(QRect(20, 475, 971, 36));
-        BTN_9_bg->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 50);\n"
+        BTN_9_bg->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0,0);\n"
 "border:0px;"));
         lbl_9_faultName = new QLabel(FaultEventPage);
         lbl_9_faultName->setObjectName(QString::fromUtf8("lbl_9_faultName"));
@@ -652,15 +663,42 @@ public:
         lbl_allPage->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "font:18px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
         lbl_allPage->setAlignment(Qt::AlignCenter);
-        BTN_9_bg->raise();
-        BTN_8_bg->raise();
-        BTN_7_bg->raise();
-        BTN_6_bg->raise();
-        BTN_5_bg->raise();
-        BTN_4_bg->raise();
-        BTN_3_bg->raise();
-        BTN_2_bg->raise();
-        BTN_1_bg->raise();
+        lbl_bg_1 = new QLabel(FaultEventPage);
+        lbl_bg_1->setObjectName(QString::fromUtf8("lbl_bg_1"));
+        lbl_bg_1->setGeometry(QRect(20, 155, 971, 36));
+        lbl_bg_2 = new QLabel(FaultEventPage);
+        lbl_bg_2->setObjectName(QString::fromUtf8("lbl_bg_2"));
+        lbl_bg_2->setGeometry(QRect(20, 195, 971, 36));
+        lbl_bg_3 = new QLabel(FaultEventPage);
+        lbl_bg_3->setObjectName(QString::fromUtf8("lbl_bg_3"));
+        lbl_bg_3->setGeometry(QRect(20, 235, 971, 36));
+        lbl_bg_4 = new QLabel(FaultEventPage);
+        lbl_bg_4->setObjectName(QString::fromUtf8("lbl_bg_4"));
+        lbl_bg_4->setGeometry(QRect(20, 275, 971, 36));
+        lbl_bg_5 = new QLabel(FaultEventPage);
+        lbl_bg_5->setObjectName(QString::fromUtf8("lbl_bg_5"));
+        lbl_bg_5->setGeometry(QRect(20, 315, 971, 36));
+        lbl_bg_6 = new QLabel(FaultEventPage);
+        lbl_bg_6->setObjectName(QString::fromUtf8("lbl_bg_6"));
+        lbl_bg_6->setGeometry(QRect(20, 355, 971, 36));
+        lbl_bg_7 = new QLabel(FaultEventPage);
+        lbl_bg_7->setObjectName(QString::fromUtf8("lbl_bg_7"));
+        lbl_bg_7->setGeometry(QRect(20, 395, 971, 36));
+        lbl_bg_8 = new QLabel(FaultEventPage);
+        lbl_bg_8->setObjectName(QString::fromUtf8("lbl_bg_8"));
+        lbl_bg_8->setGeometry(QRect(20, 435, 971, 36));
+        lbl_bg_9 = new QLabel(FaultEventPage);
+        lbl_bg_9->setObjectName(QString::fromUtf8("lbl_bg_9"));
+        lbl_bg_9->setGeometry(QRect(20, 475, 971, 36));
+        lbl_bg_9->raise();
+        lbl_bg_8->raise();
+        lbl_bg_7->raise();
+        lbl_bg_6->raise();
+        lbl_bg_5->raise();
+        lbl_bg_4->raise();
+        lbl_bg_3->raise();
+        lbl_bg_2->raise();
+        lbl_bg_1->raise();
         LBLM1->raise();
         LBLTC2->raise();
         LBLMP2->raise();
@@ -741,6 +779,15 @@ public:
         lbl_currentPage->raise();
         lbl_7->raise();
         lbl_allPage->raise();
+        BTN_1_bg->raise();
+        BTN_2_bg->raise();
+        BTN_3_bg->raise();
+        BTN_4_bg->raise();
+        BTN_5_bg->raise();
+        BTN_6_bg->raise();
+        BTN_7_bg->raise();
+        BTN_8_bg->raise();
+        BTN_9_bg->raise();
 
         retranslateUi(FaultEventPage);
 
@@ -839,6 +886,15 @@ public:
         lbl_currentPage->setText(QApplication::translate("FaultEventPage", "1", 0, QApplication::UnicodeUTF8));
         lbl_7->setText(QApplication::translate("FaultEventPage", "/", 0, QApplication::UnicodeUTF8));
         lbl_allPage->setText(QApplication::translate("FaultEventPage", "2", 0, QApplication::UnicodeUTF8));
+        lbl_bg_1->setText(QString());
+        lbl_bg_2->setText(QString());
+        lbl_bg_3->setText(QApplication::translate("FaultEventPage", "TextLabel", 0, QApplication::UnicodeUTF8));
+        lbl_bg_4->setText(QApplication::translate("FaultEventPage", "TextLabel", 0, QApplication::UnicodeUTF8));
+        lbl_bg_5->setText(QApplication::translate("FaultEventPage", "TextLabel", 0, QApplication::UnicodeUTF8));
+        lbl_bg_6->setText(QApplication::translate("FaultEventPage", "TextLabel", 0, QApplication::UnicodeUTF8));
+        lbl_bg_7->setText(QString());
+        lbl_bg_8->setText(QString());
+        lbl_bg_9->setText(QString());
     } // retranslateUi
 
 };
